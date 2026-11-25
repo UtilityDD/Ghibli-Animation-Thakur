@@ -227,4 +227,12 @@ if __name__ == "__main__":
         bg.alpha_composite(crop)
         grid.paste(bg.convert("RGB"), (c * 320, r * 340))
     grid.save(ART_DIR / "verify_12_authentic_handpainted_expressions.png")
-    print("All 12 authentic hand-painted expression plates generated and saved.")
+
+    # Generate the symmetrical 100% authentic hand-painted Looking-Left plate (full mirrored bust with seamless cranium & jawline):
+    head_11 = np.array(Image.open(LAYERS_DIR / "head_exp_11_thoughtful.png"))
+    flipped_head = head_11[:, ::-1, :].copy()
+    Image.fromarray(flipped_head, mode="RGBA").save(LAYERS_DIR / "head_exp_look_left.png")
+    look_left_plate = build_authentic_handpainted_expression_plate("look_left", master_hi, ref_landmarks)
+    Image.fromarray(look_left_plate, mode="RGBA").save(LAYERS_DIR / "registered_seated_look_left.png")
+
+    print("All 12 authentic hand-painted expression plates + registered_seated_look_left.png generated and saved.")

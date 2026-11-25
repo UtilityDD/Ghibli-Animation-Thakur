@@ -32,9 +32,8 @@ def render_category_b_authentic():
     p_curious = load_registered_plate("06_curious")
     p_peaceful = load_registered_plate("10_peaceful")
     p_thoughtful = load_registered_plate("11_thoughtful")
-    # Mirror the interior gaze of `11_thoughtful` (which looks right) to create an authentic hand-painted looking-left gaze!
-    p_look_left = p_thoughtful.copy()
-    p_look_left[120:200, 244:398] = p_thoughtful[120:200, 244:398][:, ::-1]
+    # 100% authentic hand-painted Looking-Left plate (full mirrored bust with seamless cranium & jawline registration):
+    p_look_left = np.array(Image.open(LAYERS_DIR / "registered_seated_look_left.png").convert("RGBA"))
 
     nh, nw, _ = p_smile.shape
     canvas_w, canvas_h = 768, 768
@@ -144,18 +143,18 @@ def render_category_b_authentic():
         lambda f, tf, ph: dict(u=env_hold(f), pitch=-1.0 * env_hold(f), yaw=2.0 * env_hold(f), roll=5.5 * env_hold(f))
     )
 
-    # 4. THAKUR_HEAD_LOOK_LEFT_V001
+    # 4. THAKUR_HEAD_LOOK_LEFT_V001 (Uses 100% authentic hand-painted registered_seated_look_left!)
     build_head_anim(
         "THAKUR_HEAD_LOOK_LEFT_V001", "Looking Left (Viewer's Left)",
         p_smile, p_look_left,
-        lambda f, tf, ph: dict(u=env_hold(f), pitch=-0.8 * env_hold(f), yaw=-13.0 * env_hold(f), roll=-2.0 * env_hold(f))
+        lambda f, tf, ph: dict(u=env_hold(f), pitch=-0.8 * env_hold(f), yaw=-6.5 * env_hold(f), roll=-1.2 * env_hold(f))
     )
 
     # 5. THAKUR_HEAD_LOOK_RIGHT_V001 (Uses authentic hand-painted 11_thoughtful gaze!)
     build_head_anim(
         "THAKUR_HEAD_LOOK_RIGHT_V001", "Looking Right (Viewer's Right)",
         p_smile, p_thoughtful,
-        lambda f, tf, ph: dict(u=env_hold(f), pitch=-0.8 * env_hold(f), yaw=13.0 * env_hold(f), roll=2.0 * env_hold(f))
+        lambda f, tf, ph: dict(u=env_hold(f), pitch=-0.8 * env_hold(f), yaw=6.5 * env_hold(f), roll=1.2 * env_hold(f))
     )
 
     # 6. THAKUR_HEAD_LOOK_UP_V001
@@ -179,7 +178,7 @@ def render_category_b_authentic():
     build_head_anim(
         "THAKUR_HEAD_TURN_TO_CAMERA_V001", "Turning Head Towards the Camera with Warm Smile",
         p_smile, p_look_left,
-        lambda f, tf, ph: dict(u=turn_cam_u(f), pitch=-1.2 * turn_cam_u(f), yaw=-14.0 * turn_cam_u(f), roll=-2.0 * turn_cam_u(f))
+        lambda f, tf, ph: dict(u=turn_cam_u(f), pitch=-1.0 * turn_cam_u(f), yaw=-7.0 * turn_cam_u(f), roll=-1.2 * turn_cam_u(f))
     )
 
 
