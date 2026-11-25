@@ -37,7 +37,9 @@ Ghibli-Animation-Thakur/
     │   ├── Toolchain_Research.md                      <-- Multi-machine architecture specifications
     │   ├── Rig_Control_Documentation.md               <-- Armature bones, constraints & drivers
     │   ├── QC_Checklist_Standard.md                   <-- Strict visual acceptance criteria
-    │   └── Production_Roadmap.md                      <-- Phased rollout schedule & milestones
+    │   ├── Production_Roadmap.md                      <-- Phased rollout schedule & milestones
+    │   ├── Episodic_Production_Plan.md                <-- Season 1 episodic arc & secondary character roster
+    │   └── Background_Art_Bible.md                    <-- Studio Ghibli rural background specifications & prompts
     │
     ├── 01_Reference_Images/                           <-- Approved Character References
     │   ├── Master_Character_Reference_HiRes.png       <-- Canonical master painting
