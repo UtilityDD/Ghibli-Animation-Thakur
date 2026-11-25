@@ -1,28 +1,47 @@
-# AGENT ROLES & RESPONSIBILITIES MANIFEST (PHASE NINE)
-## Project: Pram Bismoy Balak Thakur (প্রম বিস্ময় বালক ঠাকুর)
+# AGENT ROLES & RESPONSIBILITIES MANIFEST
+## Project: Param Bismoy Balak Thakur (প্রম বিস্ময় বালক ঠাকুর)
+### Architecture: Multi-Agent Production Pipeline (Phases 1–8)
 
-This folder defines the modular agent responsibilities for our production pipeline. These instructions can be loaded by Antigravity subagents (`invoke_subagent` / `run_workflow`) or Claude Code / Cursor skills on either the Tier 1 (Intel i5-12400) or Tier 2 (RTX GPU) workstation.
+This manifest governs how specialized agents (whether Antigravity subagents, Claude Code, Cursor, or autonomous scripts) divide responsibilities across Tier 1 (Intel i5-12400) and Tier 2 (RTX GPU) workstations.
 
 ---
 
 ### Agent 1 — Character Design Director
-- **Identity Lock Authority:** Owns `00_Project_Documentation/Character_Bible.md` and `Master_Identity_Profile.json`.
-- **Rule:** Never allow facial structure, hair parting (always Child Thakur's left / viewer's right), 4.6-head standing ratio, 2.85-head seated ratio, or white cotton *uttoriyo* + knee-to-mid-calf *dhoti* attire to drift.
+- **Authority**: Owns `00_Project_Documentation/Character_Bible.md` and `Master_Identity_Profile.json`.
+- **Identity Invariant**: Enforces the 4.6-head standing ratio, 2.85-head Sukhasana ratio, left-side hair parting, Ghibli watercolor warmth, white *uttoriyo* drape, and uncropped 5-toed bare feet.
+- **Rule**: Rejects any synthetic caricature, unnatural smirks, or asymmetric eye drift.
 
 ### Agent 2 — Gesture & Key-Pose Designer
-- **Timing Authority:** Designs 24 FPS exposure sheets (X-sheets), defining anticipation frames, primary key poses, extremes, breakdown passing poses, and 2–4 frame overlapping cloth follow-through before animation rendering begins.
+- **Authority**: Owns 24 FPS timing curves, exposure charts (X-sheets), and motion formulas.
+- **Timing Invariant**: 24 FPS standard; 2–4 frame anticipation before movement, 3-frame overlapping cloth follow-through on uttoriyo sleeves, and gentle sinusoidal breathing rhythm.
 
 ### Agent 3 — AI & Layer Asset Generator
-- **Asset Authority:** Produces turnaround views, facial expression sheets, hand gesture sheets, and slices clean RGBA component layers into `03_Character_Assets/Layers/` (`head_base.png`, `eyes_open.png`, `eyes_half.png`, `eyes_closed.png`, `brows.png`, `mouth_*`, `torso_uttoriyo.png`, `arm_upper_*`, `forearm_*`, `hand_*`, `dhoti_*`, `leg_*`, `foot_*`).
+- **Authority**: Owns `02_Character_Design/` and modular layers in `03_Character_Assets/Layers/`.
+- **Registration Invariant**: Replaces heads using full-bust chin-registered plates (`build_authentic_expression_plates.py`). Never cuts rectangular face patches. Builds symmetrical full-bust plates (`registered_seated_look_left.png`) for lateral gazes.
 
 ### Agent 4 — Rigging Specialist
-- **Rig Authority:** Maintains `03_Character_Assets/Rig/THAKUR_CHILD_MASTER_RIG_V001.blend` and `00_Project_Documentation/Rig_Control_Documentation.md`. Ensures every bone pivot, UV mesh deform weight, and facial expression switch works cleanly in Blender 5.3 without visible gaps between body parts.
+- **Authority**: Maintains `03_Character_Assets/Rig/THAKUR_CHILD_MASTER_RIG_V001.blend` and `test_fix_single_animation.py` deformers.
+- **Pivot Invariant**: Pivots cervical spine motion at `px = 321.5, py = 308.0` (suprasternal collar notch) with cubic Hermite falloff along `y = 246..312`.
+- **Path Invariant**: Uses strictly relative texture paths (`//../Layers/...`) for seamless portability across Windows, Linux, and macOS.
 
 ### Agent 5 — Animation Specialist
-- **Motion Authority:** Executes the hybrid animation system at 24 FPS:
-  - **Method 1 (Rigged 2D Character):** Blinking, breathing, smiling, nodding, waving, praying, sitting gestures.
-  - **Method 2 (Frame-by-Frame / Multi-Pose Deformation):** Walking cycle, running cycle, jumping, turning, complex cloth motion.
-  - **Method 3 (AI-Assisted Key Poses):** Alternative angles and complex gesture exploration cleaned into rig-compatible layers.
+- **Authority**: Executes 24 FPS animation rendering in `04_Gesture_Library/` and `05_Animation_Previews/`.
+- **Delivery Invariant**: Every animation folder must contain:
+  1. `frames/*.png` (24 FPS uncompressed 32-bit RGBA).
+  2. `*.blend` (Blender project file).
+  3. `*.json` (Metadata and timing documentation).
+  4. Lossless previews in `05_Animation_Previews/` (`GIF/`, `MP4/`, `WebM/`).
 
 ### Agent 6 — Quality Controller (QC)
-- **Verification Authority:** Runs `09_Pipeline_Scripts/qc_validator.py` on every generated sheet and animation sequence, checking character consistency, 5-finger / 5-toe anatomy, 24 FPS smoothness, RGBA alpha transparency, and JSON metadata completeness.
+- **Authority**: Runs `validate_full_library.py` and produces contact sheets in `07_Production_Tests/`.
+- **Rejection Criteria**: Rejects any asset with transparent boundary notches, double-feature ghosting, clipping at head/toes, or non-relative texture paths.
+
+---
+
+## CURRENT PIPELINE STATE & HANDOFF DIRECTIVE
+- **Batch 1 (18 Animations: 10 Facial + 8 Head Movements)**: **COMPLETED, FULLY TESTED & APPROVED BY USER**.
+- **Next Assignment**: **Batch 2 (Categories C & D)**:
+  - Run `calibrate_registered_gestures.py` to prepare clean armless lap bases.
+  - Render Category C (10 Hand Mudras).
+  - Render Category D (10 Sitting & Devotional Gestures).
+  - Generate Batch 2 verification contact board and update review documentation.
