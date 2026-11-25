@@ -1,0 +1,33 @@
+{
+  "asset_id": "THAKUR_SITTING_CROSS_LEGGED_V001",
+  "category": "Sitting",
+  "status": "PASS",
+  "character_consistency": {
+    "skin_palette_delta_rgb": 6.94,
+    "hair_palette_delta_rgb": 14.78,
+    "cloth_palette_delta_rgb": 18.93,
+    "identity_lock_verified": true
+  },
+  "animation_quality": {
+    "fps": 24,
+    "mean_frame_to_frame_delta": 0.36,
+    "max_frame_to_frame_jump": 0.586,
+    "loop_closure_delta": 0.58,
+    "motion_active": true,
+    "no_flicker_or_jumps": true
+  },
+  "export_quality": {
+    "expected_frames": 72,
+    "actual_frames": 72,
+    "dimensions": [
+      768,
+      768
+    ],
+    "rgba_transparency_clean": true,
+    "editable_blend_exists": true,
+    "mp4_preview_exists": true,
+    "gif_preview_exists": true,
+    "webm_transparent_exists": true,
+    "metadata_json_exists": true
+  }
+}

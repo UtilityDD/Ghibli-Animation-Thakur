@@ -1,0 +1,33 @@
+{
+  "asset_id": "THAKUR_TURN_AROUND_V001",
+  "category": "Walking",
+  "status": "PASS",
+  "character_consistency": {
+    "skin_palette_delta_rgb": 17.49,
+    "hair_palette_delta_rgb": 13.61,
+    "cloth_palette_delta_rgb": 4.79,
+    "identity_lock_verified": true
+  },
+  "animation_quality": {
+    "fps": 24,
+    "mean_frame_to_frame_delta": 1.781,
+    "max_frame_to_frame_jump": 2.367,
+    "loop_closure_delta": 2.511,
+    "motion_active": true,
+    "no_flicker_or_jumps": true
+  },
+  "export_quality": {
+    "expected_frames": 60,
+    "actual_frames": 60,
+    "dimensions": [
+      768,
+      768
+    ],
+    "rgba_transparency_clean": true,
+    "editable_blend_exists": true,
+    "mp4_preview_exists": true,
+    "gif_preview_exists": true,
+    "webm_transparent_exists": true,
+    "metadata_json_exists": true
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "asset_id": "THAKUR_WALK_CYCLE_V001",
+  "category": "Walking",
+  "status": "PASS",
+  "character_consistency": {
+    "skin_palette_delta_rgb": 15.91,
+    "hair_palette_delta_rgb": 12.22,
+    "cloth_palette_delta_rgb": 3.74,
+    "identity_lock_verified": true
+  },
+  "animation_quality": {
+    "fps": 24,
+    "mean_frame_to_frame_delta": 3.585,
+    "max_frame_to_frame_jump": 5.655,
+    "loop_closure_delta": 2.511,
+    "motion_active": true,
+    "no_flicker_or_jumps": true
+  },
+  "export_quality": {
+    "expected_frames": 48,
+    "actual_frames": 48,
+    "dimensions": [
+      768,
+      768
+    ],
+    "rgba_transparency_clean": true,
+    "editable_blend_exists": true,
+    "mp4_preview_exists": true,
+    "gif_preview_exists": true,
+    "webm_transparent_exists": true,
+    "metadata_json_exists": true
+  }
+}

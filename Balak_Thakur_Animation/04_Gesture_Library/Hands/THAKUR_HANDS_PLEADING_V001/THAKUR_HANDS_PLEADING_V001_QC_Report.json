@@ -1,0 +1,33 @@
+{
+  "asset_id": "THAKUR_HANDS_PLEADING_V001",
+  "category": "Hands",
+  "status": "PASS",
+  "character_consistency": {
+    "skin_palette_delta_rgb": 7.42,
+    "hair_palette_delta_rgb": 14.52,
+    "cloth_palette_delta_rgb": 13.18,
+    "identity_lock_verified": true
+  },
+  "animation_quality": {
+    "fps": 24,
+    "mean_frame_to_frame_delta": 1.35,
+    "max_frame_to_frame_jump": 3.277,
+    "loop_closure_delta": 0.807,
+    "motion_active": true,
+    "no_flicker_or_jumps": true
+  },
+  "export_quality": {
+    "expected_frames": 60,
+    "actual_frames": 60,
+    "dimensions": [
+      768,
+      768
+    ],
+    "rgba_transparency_clean": true,
+    "editable_blend_exists": true,
+    "mp4_preview_exists": true,
+    "gif_preview_exists": true,
+    "webm_transparent_exists": true,
+    "metadata_json_exists": true
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "asset_id": "THAKUR_JUMP_V001",
+  "category": "Running",
+  "status": "PASS",
+  "character_consistency": {
+    "skin_palette_delta_rgb": 17.26,
+    "hair_palette_delta_rgb": 13.67,
+    "cloth_palette_delta_rgb": 3.24,
+    "identity_lock_verified": true
+  },
+  "animation_quality": {
+    "fps": 24,
+    "mean_frame_to_frame_delta": 5.906,
+    "max_frame_to_frame_jump": 13.543,
+    "loop_closure_delta": 2.614,
+    "motion_active": true,
+    "no_flicker_or_jumps": true
+  },
+  "export_quality": {
+    "expected_frames": 48,
+    "actual_frames": 48,
+    "dimensions": [
+      768,
+      768
+    ],
+    "rgba_transparency_clean": true,
+    "editable_blend_exists": true,
+    "mp4_preview_exists": true,
+    "gif_preview_exists": true,
+    "webm_transparent_exists": true,
+    "metadata_json_exists": true
+  }
+}

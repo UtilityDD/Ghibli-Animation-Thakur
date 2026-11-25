@@ -1,0 +1,78 @@
+{
+  "A. Turnaround Sheet": {
+    "asset_name": "A. Turnaround Sheet",
+    "file_path": "02_Character_Design\\Turnaround\\THAKUR_TURNAROUND_SHEET_V001.png",
+    "exists": true,
+    "status": "PASS",
+    "checks": {
+      "dimensions": {
+        "width": 1376,
+        "height": 768,
+        "pass": true
+      },
+      "palette_consistency": {
+        "skin_top1pct_rgb_dist": 18.79,
+        "hair_top1pct_rgb_dist": 12.85,
+        "cloth_top1pct_rgb_dist": 5.0,
+        "pass": true
+      }
+    }
+  },
+  "B. 12-Expression Sheet": {
+    "asset_name": "B. 12-Expression Sheet",
+    "file_path": "02_Character_Design\\Expressions\\THAKUR_EXPRESSION_SHEET_12_V001.png",
+    "exists": true,
+    "status": "PASS",
+    "checks": {
+      "dimensions": {
+        "width": 1200,
+        "height": 896,
+        "pass": true
+      },
+      "palette_consistency": {
+        "skin_top1pct_rgb_dist": 7.87,
+        "hair_top1pct_rgb_dist": 6.56,
+        "cloth_top1pct_rgb_dist": 8.25,
+        "pass": true
+      }
+    }
+  },
+  "C. Hand Gesture Sheet": {
+    "asset_name": "C. Hand Gesture Sheet",
+    "file_path": "02_Character_Design\\Hand_Gestures\\THAKUR_HAND_GESTURE_SHEET_V001.png",
+    "exists": true,
+    "status": "PASS",
+    "checks": {
+      "dimensions": {
+        "width": 1376,
+        "height": 768,
+        "pass": true
+      },
+      "palette_consistency": {
+        "skin_top1pct_rgb_dist": 27.0,
+        "hair_top1pct_rgb_dist": 20.35,
+        "cloth_top1pct_rgb_dist": 5.1,
+        "pass": true
+      }
+    }
+  },
+  "D. Body Proportion Sheet": {
+    "asset_name": "D. Body Proportion Sheet",
+    "file_path": "02_Character_Design\\Body_Proportions\\THAKUR_BODY_PROPORTION_SHEET_V001.png",
+    "exists": true,
+    "status": "PASS",
+    "checks": {
+      "dimensions": {
+        "width": 1376,
+        "height": 768,
+        "pass": true
+      },
+      "palette_consistency": {
+        "skin_top1pct_rgb_dist": 10.65,
+        "hair_top1pct_rgb_dist": 22.74,
+        "cloth_top1pct_rgb_dist": 18.06,
+        "pass": true
+      }
+    }
+  }
+}

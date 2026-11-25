@@ -1,0 +1,33 @@
+{
+  "asset_id": "THAKUR_HANDS_RAISING_BLESSING_V001",
+  "category": "Hands",
+  "status": "PASS",
+  "character_consistency": {
+    "skin_palette_delta_rgb": 7.08,
+    "hair_palette_delta_rgb": 14.53,
+    "cloth_palette_delta_rgb": 13.19,
+    "identity_lock_verified": true
+  },
+  "animation_quality": {
+    "fps": 24,
+    "mean_frame_to_frame_delta": 1.141,
+    "max_frame_to_frame_jump": 2.796,
+    "loop_closure_delta": 0.804,
+    "motion_active": true,
+    "no_flicker_or_jumps": true
+  },
+  "export_quality": {
+    "expected_frames": 60,
+    "actual_frames": 60,
+    "dimensions": [
+      768,
+      768
+    ],
+    "rgba_transparency_clean": true,
+    "editable_blend_exists": true,
+    "mp4_preview_exists": true,
+    "gif_preview_exists": true,
+    "webm_transparent_exists": true,
+    "metadata_json_exists": true
+  }
+}

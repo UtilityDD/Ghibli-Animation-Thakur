@@ -1,0 +1,33 @@
+{
+  "asset_id": "THAKUR_EMOTIONAL_BECOMING_EMOTIONAL_V001",
+  "category": "Emotional",
+  "status": "PASS",
+  "character_consistency": {
+    "skin_palette_delta_rgb": 7.55,
+    "hair_palette_delta_rgb": 14.82,
+    "cloth_palette_delta_rgb": 13.23,
+    "identity_lock_verified": true
+  },
+  "animation_quality": {
+    "fps": 24,
+    "mean_frame_to_frame_delta": 1.15,
+    "max_frame_to_frame_jump": 3.504,
+    "loop_closure_delta": 0.75,
+    "motion_active": true,
+    "no_flicker_or_jumps": true
+  },
+  "export_quality": {
+    "expected_frames": 72,
+    "actual_frames": 72,
+    "dimensions": [
+      768,
+      768
+    ],
+    "rgba_transparency_clean": true,
+    "editable_blend_exists": true,
+    "mp4_preview_exists": true,
+    "gif_preview_exists": true,
+    "webm_transparent_exists": true,
+    "metadata_json_exists": true
+  }
+}

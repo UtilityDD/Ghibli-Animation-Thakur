@@ -1,0 +1,33 @@
+{
+  "asset_id": "THAKUR_RUN_CYCLE_V001",
+  "category": "Running",
+  "status": "PASS",
+  "character_consistency": {
+    "skin_palette_delta_rgb": 18.55,
+    "hair_palette_delta_rgb": 15.74,
+    "cloth_palette_delta_rgb": 2.52,
+    "identity_lock_verified": true
+  },
+  "animation_quality": {
+    "fps": 24,
+    "mean_frame_to_frame_delta": 6.985,
+    "max_frame_to_frame_jump": 11.043,
+    "loop_closure_delta": 6.673,
+    "motion_active": true,
+    "no_flicker_or_jumps": true
+  },
+  "export_quality": {
+    "expected_frames": 32,
+    "actual_frames": 32,
+    "dimensions": [
+      768,
+      768
+    ],
+    "rgba_transparency_clean": true,
+    "editable_blend_exists": true,
+    "mp4_preview_exists": true,
+    "gif_preview_exists": true,
+    "webm_transparent_exists": true,
+    "metadata_json_exists": true
+  }
+}

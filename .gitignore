@@ -1,0 +1,32 @@
+# Operating System Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+*.tmp
+*.bak
+
+# Python Caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.egg-info/
+
+# Blender Auto-Saves & Backups
+*.blend1
+*.blend2
+*.blend@
+*.blend.bak
+
+# IDE & Editor Directories
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Pipeline temporary render dumps & test logs
+*.log
+scratch/
+.system_generated/

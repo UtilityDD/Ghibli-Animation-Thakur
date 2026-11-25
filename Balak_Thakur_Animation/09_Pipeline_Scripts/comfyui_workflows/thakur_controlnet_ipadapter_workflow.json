@@ -1,0 +1,22 @@
+{
+  "workflow_name": "Child_Thakur_ControlNet_IPAdapter_Tier2_RTX_Workflow",
+  "description": "Portable ComfyUI workflow template for Tier 2 GPU Workstation (NVIDIA RTX 2060 6GB+ VRAM). Uses OpenPose + Lineart ControlNet + IP-Adapter Plus Face/Character lock from 01_Thakur_Age06_Child_Ujanchar_Master_Ref.png.",
+  "hardware_target": "Tier 2 GPU Workstation (6GB+ VRAM, --medvram, FP16)",
+  "model_storage_rule": "Store checkpoints on D:\\ComfyUI_Models\\ (never C:\\)",
+  "inputs": {
+    "master_reference_image": "01_Reference_Images/01_Thakur_Age06_Child_Ujanchar_Master_Ref.png",
+    "master_face_crop": "01_Reference_Images/Master_Face_Crop_Reference.png",
+    "openpose_pass_dir": "07_Production_Tests/openpose_passes/",
+    "lineart_pass_dir": "07_Production_Tests/lineart_passes/"
+  },
+  "recommended_settings": {
+    "sampler": "dpmpp_2m_sde_gpu",
+    "scheduler": "karras",
+    "steps": 25,
+    "cfg": 6.5,
+    "ipadapter_weight": 0.88,
+    "controlnet_openpose_strength": 0.95,
+    "controlnet_lineart_strength": 0.75,
+    "post_process": "Run 09_Pipeline_Scripts/qc_validator.py to enforce Master_Identity_Profile.json color & landmark lock"
+  }
+}

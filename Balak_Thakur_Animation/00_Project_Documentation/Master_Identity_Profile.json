@@ -1,0 +1,417 @@
+{
+  "character_id": "BALAK_THAKUR_AGE06_UJANCHAR",
+  "version": "1.0.0",
+  "master_reference_file": "01_Reference_Images/01_Thakur_Age06_Child_Ujanchar_Master_Ref.png",
+  "source_workspace_file": "Divine Glow in a Village Garden.png",
+  "landmarks_px": {
+    "image_dimensions": {
+      "width": 1678,
+      "height": 937
+    },
+    "head": {
+      "crown_top": [
+        841,
+        81
+      ],
+      "hairline_center": [
+        841,
+        148
+      ],
+      "hair_part_left_viewer_right": [
+        903,
+        134
+      ],
+      "forehead_center": [
+        841,
+        185
+      ],
+      "brow_left_inner": [
+        815,
+        217
+      ],
+      "brow_left_arch": [
+        785,
+        212
+      ],
+      "brow_left_outer": [
+        755,
+        224
+      ],
+      "brow_right_inner": [
+        868,
+        217
+      ],
+      "brow_right_arch": [
+        898,
+        212
+      ],
+      "brow_right_outer": [
+        928,
+        224
+      ],
+      "eye_left_outer": [
+        767,
+        253
+      ],
+      "eye_left_center": [
+        791,
+        252
+      ],
+      "eye_left_inner": [
+        814,
+        255
+      ],
+      "eye_right_inner": [
+        869,
+        255
+      ],
+      "eye_right_center": [
+        892,
+        252
+      ],
+      "eye_right_outer": [
+        916,
+        253
+      ],
+      "nose_bridge": [
+        841,
+        268
+      ],
+      "nose_tip": [
+        841,
+        297
+      ],
+      "mouth_left": [
+        812,
+        325
+      ],
+      "mouth_center": [
+        841,
+        328
+      ],
+      "mouth_right": [
+        871,
+        325
+      ],
+      "chin_bottom": [
+        841,
+        368
+      ],
+      "ear_left_top": [
+        736,
+        245
+      ],
+      "ear_left_bottom": [
+        748,
+        312
+      ],
+      "ear_right_top": [
+        947,
+        245
+      ],
+      "ear_right_bottom": [
+        935,
+        312
+      ],
+      "jaw_left": [
+        762,
+        320
+      ],
+      "jaw_right": [
+        920,
+        320
+      ],
+      "head_left_bound": [
+        727,
+        205
+      ],
+      "head_right_bound": [
+        955,
+        205
+      ]
+    },
+    "body_seated": {
+      "neck_base": [
+        841,
+        412
+      ],
+      "shoulder_left": [
+        692,
+        435
+      ],
+      "shoulder_right": [
+        990,
+        435
+      ],
+      "elbow_left": [
+        635,
+        665
+      ],
+      "elbow_right": [
+        1048,
+        665
+      ],
+      "hand_left_knuckles": [
+        798,
+        800
+      ],
+      "hand_right_knuckles": [
+        878,
+        800
+      ],
+      "knee_left_outer": [
+        535,
+        815
+      ],
+      "knee_right_outer": [
+        1142,
+        815
+      ],
+      "foot_right_heel": [
+        840,
+        862
+      ],
+      "foot_right_toes": [
+        1035,
+        865
+      ],
+      "base_mat_contact": [
+        841,
+        900
+      ]
+    }
+  },
+  "proportions": {
+    "head_height_px": 287,
+    "head_width_px": 228,
+    "head_aspect_ratio_w_to_h": 0.794,
+    "interocular_to_eye_width_ratio": 1.17,
+    "eye_line_vertical_fraction_from_crown": 0.596,
+    "nose_tip_vertical_fraction_from_crown": 0.753,
+    "mouth_line_vertical_fraction_from_crown": 0.861,
+    "shoulder_width_in_head_widths": 1.307,
+    "seated_height_in_head_heights": 2.854,
+    "canonical_standing_height_in_head_heights": 4.6,
+    "child_age_reference": "6 years old (Balak Thakur at Ujanchar)",
+    "attire_specification": {
+      "upper_inner": "Diagonal unstitched white cotton inner wrap across left shoulder leaving right collarbone visible",
+      "upper_outer": "Traditional white cotton uttoriyo (shawl) draped symmetrically over both shoulders with wide mid-forearm folds",
+      "lower_garment": "Traditional rural Bengali child's white cotton dhoti (knee-to-mid-calf length when standing/walking, pooled softly when seated)",
+      "footwear": "Barefoot"
+    }
+  },
+  "color_palette": {
+    "skin_forehead_light": {
+      "hex": "#FCBD70",
+      "rgb": [
+        252,
+        189,
+        112
+      ],
+      "sample_xy": [
+        841,
+        185
+      ]
+    },
+    "skin_cheek_midtone": {
+      "hex": "#FDC275",
+      "rgb": [
+        253,
+        194,
+        117
+      ],
+      "sample_xy": [
+        785,
+        290
+      ]
+    },
+    "skin_neck_shadow": {
+      "hex": "#E39856",
+      "rgb": [
+        227,
+        152,
+        86
+      ],
+      "sample_xy": [
+        841,
+        385
+      ]
+    },
+    "skin_arm_midtone": {
+      "hex": "#CC8756",
+      "rgb": [
+        204,
+        135,
+        86
+      ],
+      "sample_xy": [
+        740,
+        745
+      ]
+    },
+    "skin_foot_midtone": {
+      "hex": "#DF9659",
+      "rgb": [
+        223,
+        150,
+        89
+      ],
+      "sample_xy": [
+        950,
+        855
+      ]
+    },
+    "hair_dark_core": {
+      "hex": "#533E2D",
+      "rgb": [
+        83,
+        62,
+        45
+      ],
+      "sample_xy": [
+        820,
+        118
+      ]
+    },
+    "hair_warm_highlight": {
+      "hex": "#7E5939",
+      "rgb": [
+        126,
+        89,
+        57
+      ],
+      "sample_xy": [
+        845,
+        92
+      ]
+    },
+    "eye_iris_dark": {
+      "hex": "#4C2E15",
+      "rgb": [
+        76,
+        46,
+        21
+      ],
+      "sample_xy": [
+        791,
+        252
+      ]
+    },
+    "eye_sclera_warm": {
+      "hex": "#FEC979",
+      "rgb": [
+        254,
+        201,
+        121
+      ],
+      "sample_xy": [
+        776,
+        253
+      ]
+    },
+    "eyebrow_dark": {
+      "hex": "#4A3121",
+      "rgb": [
+        74,
+        49,
+        33
+      ],
+      "sample_xy": [
+        788,
+        213
+      ]
+    },
+    "lip_warm_tone": {
+      "hex": "#B46A37",
+      "rgb": [
+        180,
+        106,
+        55
+      ],
+      "sample_xy": [
+        841,
+        326
+      ]
+    },
+    "cloth_uttoriyo_light": {
+      "hex": "#FDEBCD",
+      "rgb": [
+        253,
+        235,
+        205
+      ],
+      "sample_xy": [
+        720,
+        560
+      ]
+    },
+    "cloth_uttoriyo_mid": {
+      "hex": "#E0C7B2",
+      "rgb": [
+        224,
+        199,
+        178
+      ],
+      "sample_xy": [
+        745,
+        620
+      ]
+    },
+    "cloth_fold_shadow": {
+      "hex": "#736154",
+      "rgb": [
+        115,
+        97,
+        84
+      ],
+      "sample_xy": [
+        835,
+        665
+      ]
+    },
+    "cloth_deep_shadow": {
+      "hex": "#D0BAA6",
+      "rgb": [
+        208,
+        186,
+        166
+      ],
+      "sample_xy": [
+        610,
+        825
+      ]
+    },
+    "linework_sepia_charcoal": {
+      "hex": "#D88D53",
+      "rgb": [
+        216,
+        141,
+        83
+      ],
+      "sample_xy": [
+        841,
+        368
+      ]
+    },
+    "divine_halo_gold": {
+      "hex": "#FEFABD",
+      "rgb": [
+        254,
+        250,
+        189
+      ],
+      "sample_xy": [
+        700,
+        180
+      ]
+    }
+  },
+  "qc_thresholds": {
+    "max_skin_delta_e": 18.0,
+    "max_cloth_delta_e": 15.0,
+    "head_aspect_ratio_tolerance": 0.08,
+    "standing_head_to_body_target": 4.6,
+    "standing_head_to_body_tolerance": 0.25,
+    "required_fps": 24
+  }
+}
