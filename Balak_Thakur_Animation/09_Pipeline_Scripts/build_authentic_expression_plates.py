@@ -180,16 +180,25 @@ def build_authentic_handpainted_expression_plate(exp_name: str, master_hi: np.nd
     xn_jaw = np.clip((gx - ref_cx) / 52.0, -1.5, 1.5)
     y_jaw_curve = (ref_chin_y + 2.0) - 18.0 * np.clip(xn_jaw ** 2, 0.0, 1.2)
 
-    # Erase master_hi's old head everywhere above `y_jaw_curve - 1.0`!
-    keep_body_mask = np.clip((gy - (y_jaw_curve - 2.0)) / 4.0, 0.0, 1.0)
-    out[:, :, 3] = (out[:, :, 3].astype(np.float32) * keep_body_mask).astype(np.uint8)
+    # Perfectly continuous chin-to-neck transition with ZERO holes or notches:
+    # 1. warped_head replaces master_hi above the jawline curve, and smoothly blends over 6px across the bare neck
+    w_h = np.clip((y_jaw_curve + 3.0 - gy) / 6.0, 0.0, 1.0)
+    head_alpha = warped_head[:, :, 3].astype(np.float32) / 255.0
+    master_alpha = master_hi[:, :, 3].astype(np.float32) / 255.0
 
-    # Mask `warped_head` so it is 1.0 above `y_jaw_curve` and 0.0 below `y_jaw_curve + 3.0` (eliminating 100% of `warped_head`'s white collar so there is ZERO double collar!)
-    head_mask = np.clip(((y_jaw_curve + 2.5) - gy) / 4.5, 0.0, 1.0)
+    # Solid body base: master_hi is preserved everywhere below the jawline!
+    out = master_hi.copy()
+    blend_w = w_h * head_alpha
 
-    wh_layered = warped_head.copy()
-    wh_layered[:, :, 3] = (wh_layered[:, :, 3].astype(np.float32) * head_mask).astype(np.uint8)
-    alpha_composite_layer(out, wh_layered, 0, 0)
+    # Blend RGB channels seamlessly:
+    for c in range(3):
+        out[:, :, c] = np.clip(
+            out[:, :, c].astype(np.float32) * (1.0 - blend_w) + warped_head[:, :, c].astype(np.float32) * blend_w,
+            0, 255
+        ).astype(np.uint8)
+
+    # Resulting plate preserves 100% solid alpha with ZERO holes or notches:
+    out[:, :, 3] = np.clip(np.maximum(master_alpha, head_alpha) * 255.0, 0, 255).astype(np.uint8)
 
     return out
 

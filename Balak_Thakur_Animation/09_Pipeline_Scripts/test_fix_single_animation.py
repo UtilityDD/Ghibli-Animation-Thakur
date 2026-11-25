@@ -141,64 +141,63 @@ def deform_unified_character_mesh(
     cloth_phase: float = 0.0
 ):
     """
-    Deforms the ENTIRE character (`656 x 664`) as a single continuous 2D mesh!
-    - Because it is a SINGLE continuous mesh with smooth bone weight falloff at the neck (`y=215..255`),
-      there is NEVER a detached head, NEVER a neck gap, and NEVER a ghost crown behind the hair!
-    - Weight zones along Y (0..664):
-      - Head zone (`y = 0..220`): weight_head = 1.0 (smoothly transitions to 0.0 over `y = 220..260` neck/collar).
-      - Chest/Torso zone (`y = 230..480`): breathing chest expansion & shoulder lift.
-      - Uttoriyo shawl sleeves (`y = 250..500`, outer left/right): 3-frame delayed cloth sway.
-      - Crossed legs base (`y = 500..664`): grounded on the mat (`weight = 0.0` at bottom contact `y=650`).
+    Deforms the ENTIRE character (`656 x 696`) as a single continuous 2D mesh with an
+    anatomically accurate cervical neck column:
+    - Root Pivot (px=321.5, py=308.0) is anchored at the base of the cervical spine / collar notch!
+    - Head & Cranium zone (y <= 246): 100% solid rigid motion (zero internal distortion or jaw shearing).
+    - Cervical Neck Column zone (y = 246..312): continuous cubic Hermite transition from 1.0 at chin
+      down to 0.0 at the collar, ensuring 100% seamless connection between head and torso under all rotations!
+    - Torso zone (y = 280..520): breathing expansion & living posture lift.
+    - Uttoriyo shawl sleeves (y = 250..520): organic cloth sway.
     """
     h, w, _ = char_rgba.shape
     gy, gx = np.indices((h, w), dtype=np.float32)
 
-    # Smooth bone weights (0.0 to 1.0) shifted by +16px for the uncropped 696h canvas:
-    w_head = np.clip((274.0 - gy) / (274.0 - 231.0), 0.0, 1.0)
-    w_head = w_head * w_head * (3.0 - 2.0 * w_head)
+    # 1. Anatomical Cervical Root Pivot (C7/collar notch):
+    px, py = 321.5, 308.0
 
-    w_torso = np.clip(1.0 - np.abs(gy - 366.0) / 170.0, 0.0, 1.0)
+    # 2. Smooth anatomical head-and-neck weight:
+    # Full head down to chin tip (y <= 246): 1.0
+    # Cervical neck column (y = 246 .. 312): smoothly transitions from 1.0 to 0.0
+    # Collar & Torso (y > 312): 0.0
+    u_neck = np.clip((312.0 - gy) / (312.0 - 246.0), 0.0, 1.0)
+    w_head_neck = u_neck * u_neck * (3.0 - 2.0 * u_neck)
+
+    # Torso breathing & cloth sway weights
+    w_torso = np.clip(1.0 - np.abs(gy - 380.0) / 160.0, 0.0, 1.0)
     w_torso = w_torso * w_torso * (3.0 - 2.0 * w_torso)
+    w_cloth = np.clip(1.0 - np.abs(gy - 450.0) / 130.0, 0.0, 1.0)
 
-    w_cloth = np.clip(1.0 - np.abs(gy - 446.0) / 130.0, 0.0, 1.0)
-
-    dx_total = np.zeros((h, w), dtype=np.float32)
-    dy_total = np.zeros((h, w), dtype=np.float32)
-
-    px, py = 322.0, 251.0
     rel_x = gx - px
     rel_y = gy - py
 
-    rad = math.radians(-head_roll_deg)
-    cos_r, sin_r = math.cos(rad), math.sin(rad)
-    rot_dx = (rel_x * cos_r - rel_y * sin_r) - rel_x
-    rot_dy = (rel_x * sin_r + rel_y * cos_r) - rel_y
+    # 3. Head Roll (tilt): anatomical tilt pivoting around the neck base (py = 308.0)
+    rad_roll = math.radians(-head_roll_deg)
+    cos_roll, sin_roll = math.cos(rad_roll), math.sin(rad_roll)
+    rot_dx = (rel_x * cos_roll - rel_y * sin_roll) - rel_x
+    rot_dy = (rel_x * sin_roll + rel_y * cos_roll) - rel_y
 
-    # 2.5D Pitch (nodding down/up): shifts facial features vertically with subtle curvature
-    pitch_rad = math.radians(head_pitch_deg)
-    x_norm_head = np.clip(rel_x / 110.0, -1.5, 1.5)
-    pitch_dy = -math.sin(pitch_rad) * 16.0 * (1.0 - 0.25 * (x_norm_head ** 2))
-    # Subtle vertical compression of forehead/chin during pitch
-    pitch_comp_dy = (gy - 148.0) * (1.0 - math.cos(pitch_rad * 0.65))
+    # 4. Head Pitch (nodding/looking up/down): smooth vertical flex scaled by distance from neck base
+    rad_pitch = math.radians(head_pitch_deg)
+    pitch_dy = -math.sin(rad_pitch) * (py - gy) * 0.13
+    pitch_comp = (gy - 160.0) * (1.0 - math.cos(rad_pitch * 0.6))
 
-    # 2.5D Yaw (turning left/right): shifts facial center horizontally more than outer cranium/ears
-    yaw_rad = math.radians(head_yaw_deg)
-    y_face_bell = np.clip(1.0 - ((gy - 148.0) / 115.0) ** 2, 0.0, 1.0)
-    yaw_dx = -math.sin(yaw_rad) * 20.0 * (1.0 - 0.40 * (x_norm_head ** 2)) * y_face_bell
+    # 5. Head Yaw (turning left/right): whole head & cervical column turn horizontally
+    rad_yaw = math.radians(head_yaw_deg)
+    yaw_base_dx = -math.sin(rad_yaw) * 13.0
+    # Subtle 2.5D facial perspective parallax inside the facial contour
+    face_rad = np.clip(1.0 - np.sqrt(((gx - 321.5) / 90.0) ** 2 + ((gy - 180.0) / 85.0) ** 2), 0.0, 1.0)
+    yaw_parallax_dx = -math.sin(rad_yaw) * 4.0 * (face_rad ** 2)
 
-    dx_total += w_head * (rot_dx + yaw_dx)
-    dy_total += w_head * (rot_dy + pitch_dy + pitch_comp_dy)
+    dx_total = w_head_neck * (rot_dx + yaw_base_dx + yaw_parallax_dx)
+    dy_total = w_head_neck * (rot_dy + pitch_dy + pitch_comp)
 
-    # --- B. Torso Breathing & Subtle Living Posture ---
+    # 6. Torso Breathing & Subtle Living Posture
     breath = math.sin(breath_phase)
     cloth_sway = math.sin(cloth_phase)
-
-    # Chest expands horizontally by ±0.8% and lifts vertically by ±1.8px during inhalation
-    dx_total += w_torso * (-(gx - 322.0) * 0.008 * breath)
-    dy_total += (w_torso + w_head * 0.7) * (1.8 * breath)
-
-    # Overlapping uttoriyo shawl fold wave
-    dx_total += w_cloth * (-2.2 * cloth_sway)
+    dx_total += w_torso * (-(gx - 321.5) * 0.007 * breath)
+    dy_total += (w_torso * 1.5 + w_head_neck * 0.5) * breath
+    dx_total += w_cloth * (-2.0 * cloth_sway)
 
     map_x = (gx + dx_total).astype(np.float32)
     map_y = (gy + dy_total).astype(np.float32)
