@@ -1,26 +1,25 @@
 {
   "asset_id": "THAKUR_PRAYER_SITTING_V001",
-  "gesture_name": "Sitting Cross-Legged (Sukhasana) and Praying (Namaskar)",
-  "gesture_category": "Sitting / Devotional",
+  "gesture_name": "Complete Seated Prayer Cycle (Pranam & Devotion)",
+  "gesture_category": "Sitting",
   "character_id": "BALAK_THAKUR_AGE06_UJANCHAR",
   "character_version": "1.0.0",
-  "animation_method": "Method 1 + Method 3: Rigged 2D Sukhasana Layers + Articulated Namaskar Hand Rise & Serene Eye Close",
+  "animation_method": "Method 1: Zero-Double-Arm Registered Gesture Plate + Unified Continuous 2D Rig",
   "source_blend_file": "03_Character_Assets/Rig/THAKUR_CHILD_MASTER_RIG_V001.blend",
+  "editable_blend_file": "04_Gesture_Library/Sitting/THAKUR_PRAYER_SITTING_V001/THAKUR_PRAYER_SITTING_V001.blend",
   "png_sequence_dir": "04_Gesture_Library\\Sitting\\THAKUR_PRAYER_SITTING_V001\\frames",
   "preview_mp4": "05_Animation_Previews\\MP4\\THAKUR_PRAYER_SITTING_V001.mp4",
   "preview_gif": "05_Animation_Previews\\GIF\\THAKUR_PRAYER_SITTING_V001.gif",
   "preview_webm": "05_Animation_Previews\\WebM\\THAKUR_PRAYER_SITTING_V001.webm",
   "frame_rate": 24,
-  "frame_count": 96,
-  "duration_seconds": 4.0,
+  "frame_count": 72,
+  "duration_seconds": 3.0,
   "dimensions": [
     768,
     768
   ],
   "transparency": true,
   "seamless_loop": true,
-  "approval_status": "APPROVED_V1",
-  "version": "V001",
-  "qc_status": "PASS",
-  "editable_blend_file": "04_Gesture_Library/Sitting/THAKUR_PRAYER_SITTING_V001/THAKUR_PRAYER_SITTING_V001.blend"
+  "approval_status": "APPROVED_PIPELINE_V1",
+  "version": "V001"
 }

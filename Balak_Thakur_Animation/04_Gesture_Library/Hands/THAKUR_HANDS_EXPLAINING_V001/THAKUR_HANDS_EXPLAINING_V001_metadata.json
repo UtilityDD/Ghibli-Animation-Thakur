@@ -4,7 +4,7 @@
   "gesture_category": "Hands",
   "character_id": "BALAK_THAKUR_AGE06_UJANCHAR",
   "character_version": "1.0.0",
-  "animation_method": "Method 1 + Method 3: Rigged 2D Layered Mesh + Articulated Hand/Torso Gesture & Cloth Overlap",
+  "animation_method": "Method 1: Zero-Double-Arm Registered Gesture Plate + Unified Continuous 2D Rig",
   "source_blend_file": "03_Character_Assets/Rig/THAKUR_CHILD_MASTER_RIG_V001.blend",
   "editable_blend_file": "04_Gesture_Library/Hands/THAKUR_HANDS_EXPLAINING_V001/THAKUR_HANDS_EXPLAINING_V001.blend",
   "png_sequence_dir": "04_Gesture_Library\\Hands\\THAKUR_HANDS_EXPLAINING_V001\\frames",
@@ -20,7 +20,6 @@
   ],
   "transparency": true,
   "seamless_loop": true,
-  "approval_status": "APPROVED_V1",
-  "version": "V001",
-  "qc_status": "PASS"
+  "approval_status": "APPROVED_PIPELINE_V1",
+  "version": "V001"
 }
