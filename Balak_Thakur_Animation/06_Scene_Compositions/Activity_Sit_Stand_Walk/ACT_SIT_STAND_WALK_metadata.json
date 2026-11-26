@@ -1,0 +1,63 @@
+{
+  "sequence_id": "ACT_SIT_STAND_WALK_V001",
+  "title": "শান্ত প্রস্থান (The Contemplative Departure)",
+  "character": "Param Bismoy Balak Thakur (Age 6, Ujanchar)",
+  "scene": "Ancestral Courtyard Plinth (Morning Komorebi)",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 24,
+  "total_frames": 288,
+  "duration_seconds": 12.0,
+  "acts": {
+    "act_1_sitting_posture_shift": {
+      "frames": [
+        1,
+        72
+      ],
+      "seconds": [
+        0.0,
+        3.0
+      ]
+    },
+    "act_2_organic_stand_up": {
+      "frames": [
+        73,
+        132
+      ],
+      "seconds": [
+        3.0,
+        5.5
+      ]
+    },
+    "act_3_settle_and_turnaround": {
+      "frames": [
+        133,
+        204
+      ],
+      "seconds": [
+        5.5,
+        8.5
+      ]
+    },
+    "act_4_gentle_walk_into_depth": {
+      "frames": [
+        205,
+        288
+      ],
+      "seconds": [
+        8.5,
+        12.0
+      ]
+    }
+  },
+  "technical_features": [
+    "Dense Farneback optical flow transitional bridging",
+    "Continuous ground-plane contact shadow tracking",
+    "Perspective depth scaling (1.00x -> 0.86x)",
+    "Volumetric 34-degree crepuscular sunbeam illumination",
+    "45 golden bokeh dust particles with sinusoidal drift",
+    "2.39:1 Anamorphic cinema scope bars"
+  ]
+}
