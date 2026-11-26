@@ -20,6 +20,7 @@
   ],
   "transparency": true,
   "seamless_loop": true,
-  "approval_status": "APPROVED_PIPELINE_V1",
-  "version": "V001"
+  "approval_status": "APPROVED_V1",
+  "version": "V001",
+  "qc_status": "PASS"
 }

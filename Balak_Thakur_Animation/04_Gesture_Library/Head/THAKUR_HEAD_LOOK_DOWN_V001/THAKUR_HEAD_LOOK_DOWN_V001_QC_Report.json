@@ -3,16 +3,16 @@
   "category": "Head",
   "status": "PASS",
   "character_consistency": {
-    "skin_palette_delta_rgb": 7.01,
-    "hair_palette_delta_rgb": 14.91,
-    "cloth_palette_delta_rgb": 19.06,
+    "skin_palette_delta_rgb": 6.65,
+    "hair_palette_delta_rgb": 14.14,
+    "cloth_palette_delta_rgb": 19.17,
     "identity_lock_verified": true
   },
   "animation_quality": {
     "fps": 24,
-    "mean_frame_to_frame_delta": 0.496,
-    "max_frame_to_frame_jump": 1.159,
-    "loop_closure_delta": 0.539,
+    "mean_frame_to_frame_delta": 0.273,
+    "max_frame_to_frame_jump": 1.021,
+    "loop_closure_delta": 0.588,
     "motion_active": true,
     "no_flicker_or_jumps": true
   },

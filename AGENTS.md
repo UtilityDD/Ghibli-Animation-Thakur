@@ -32,9 +32,11 @@
 | **Phase 3** | Modular Layers & Master 2D Rig | ✅ **DONE** | Master rig (`THAKUR_CHILD_MASTER_RIG_V001.blend`) & 60+ RGBA layers. |
 | **Phase 4** | Pilot Benchmark Animations | ✅ **DONE** | 5 foundational animations validated. |
 | **Phase 5** | **Batch 1 (Categories A & B)** | ✅ **APPROVED** | **18 Animations Verified & Approved by User**: 10 Facial + 8 Head Movements with seamless neck alignment and authentic hand-painted plates. |
-| **Phase 6** | **Batch 2 (Categories C & D)** | 🟡 **NEXT TASK** | **10 Hand Gestures** (Category C) + **10 Sitting & Devotional Gestures** (Category D). |
-| **Phase 7** | **Batch 3 (Categories E & F)** | ⏳ **PENDING** | Full-Body Locomotion (Walk/Run cycles) + Emotional Storytelling. |
-| **Phase 8** | ComfyUI AI Upscaling & 4K Masters | ⏳ **OPTIONAL** | Tier 2 GPU neural upscaling workflows in `09_Pipeline_Scripts/comfyui_workflows/`. |
+| **Phase 6** | **Batch 2 (Categories C & D)** | ✅ **APPROVED** | **20 Animations Verified**: 10 Hand Gestures (Category C) + 10 Sitting & Devotional Gestures (Category D) with zero-double-arm inpainting. |
+| **Phase 7** | **Batch 3 (Categories E & F)** | ✅ **APPROVED** | **18 Animations Verified**: Full-Body Locomotion (Cat E: 5 Walk + 2 Run) + Emotional Storytelling (Cat F: 8 Gestures) + Kneeling/Sit/Stand. |
+| **Phase 8** | **Complete 56-Animation Master Library** | ✅ **100% COMPLETE** | **All 56 Animations Passed 8-Point QC**: 24 FPS RGBA frames, .blend, .json, GIF/MP4/WebM previews, and HTML galleries. |
+| **Phase 9** | **Season 1 Episode 1 Pre-Production** | 🟡 **NEXT TASK** | Secondary Character Model Sheets (Mata Charushila Devi, Sanatan Master) + Kazuo Oga Ghibli Backgrounds (BG01, BG02). |
+| **Phase 10** | ComfyUI AI Upscaling & 4K Masters | ⏳ **OPTIONAL** | Tier 2 GPU neural upscaling workflows in `09_Pipeline_Scripts/comfyui_workflows/`. |
 
 ---
 
@@ -77,21 +79,33 @@ python Balak_Thakur_Animation/09_Pipeline_Scripts/render_batch1_category_a.py
 # 3. Render Batch 1 Category B (8 Head Movements):
 python Balak_Thakur_Animation/09_Pipeline_Scripts/render_batch1_category_b.py
 
-# 4. Calibrate gesture arm layers for Batch 2:
+# 4. Calibrate gesture arm layers & render Batch 2 (Categories C & D):
 python Balak_Thakur_Animation/09_Pipeline_Scripts/calibrate_registered_gestures.py
+python Balak_Thakur_Animation/09_Pipeline_Scripts/render_batch2_categories_cd.py
 
-# 5. Run automated 8-point QC validation across the entire library:
+# 5. Render Batch 3 (Categories E & F - Locomotion & Emotional):
+python Balak_Thakur_Animation/09_Pipeline_Scripts/render_locomotion.py
+python Balak_Thakur_Animation/09_Pipeline_Scripts/render_emotional_category_f.py
+
+# 6. Run automated 8-point QC validation across the entire 56-animation library:
 python Balak_Thakur_Animation/09_Pipeline_Scripts/validate_full_library.py
 ```
 
 ---
 
-## 📋 5. Next Agent Assignment: Batch 2 Rollout (Categories C & D)
+## 📋 5. Next Agent Assignment: Season 1 Episode 1 Asset Pre-Production
 
-When resuming or continuing the project, the next task is **Batch 2**:
-* **Category C (10 Hand Gestures)**:
-  `THAKUR_HAND_PRANAM_V001`, `THAKUR_HAND_BLESSING_V001`, `THAKUR_HAND_OPEN_PALMS_V001`, `THAKUR_HAND_POINTING_V001`, `THAKUR_HAND_WAVING_V001`, `THAKUR_HAND_HOLDING_FLOWER_V001`, `THAKUR_HAND_RESTING_ON_KNEES_V001`, `THAKUR_HAND_TOUCHING_CHEST_V001`, `THAKUR_HAND_EXTENDING_FORWARD_V001`, `THAKUR_HAND_FOLDED_LAP_V001`.
-* **Category D (10 Sitting & Devotional Gestures)**:
-  `THAKUR_SITTING_CROSS_LEGGED_V001`, `THAKUR_SITTING_NATURALLY_V001`, `THAKUR_SITTING_CHANGING_POSITION_V001`, `THAKUR_SITTING_LOOKING_THOUGHTFULLY_V001`, `THAKUR_SITTING_AND_SMILING_V001`, `THAKUR_SITTING_AND_LAUGHING_V001`, `THAKUR_SITTING_LISTENING_ATTENTIVELY_V001`, `THAKUR_DEVOTIONAL_MEDITATING_V001`, `THAKUR_DEVOTIONAL_BOWING_V001`, `THAKUR_PRAYER_SITTING_V001`.
-
-Use `Balak_Thakur_Animation/09_Pipeline_Scripts/calibrate_registered_gestures.py` which builds the clean armless lap base (`build_clean_armless_lap_base`) to avoid ghost limbs when compositing active gesture arms over the resting dhoti!
+The full 56-animation character gesture library for Param Bismoy Balak Thakur is **100% COMPLETE and APPROVED**.
+When resuming or continuing the project on another machine, the next production task is **Season 1 Episode 1 Asset Pre-Production**:
+* **Secondary Character Model Sheets**:
+  1. **Mata Charushila Devi** (Thakur's mother, Age ~28):
+     - Height: 6.2 Heads tall.
+     - Attire: Traditional Bengali white taant sari with narrow red border (laal-paar taant), modest ghomta (veil) draped over head, soft loving maternal eyes.
+     - Deliverable: Turnaround sheet (5 views) + Expression sheet (12 expressions) in `02_Character_Design/Secondary_Characters/Charushila_Devi/`.
+  2. **Sanatan Hazra Mastermoshai** (Village pathshala schoolmaster, Age ~45):
+     - Height: 6.0 Heads tall.
+     - Attire: Traditional beige/white khadi kurta and dhoti, round wire-rim spectacles, wooden cane/slate, gentle scholarly demeanor.
+     - Deliverable: Model sheet in `02_Character_Design/Secondary_Characters/Sanatan_Master/`.
+* **Ghibli Background Environments (Per `Background_Art_Bible.md`)**:
+  1. `BG01_Ancestral_Courtyard_Day`: Mud plinth, hand-plastered cow dung courtyard, tulsi mancha, banana fronds, warm morning sunlight.
+  2. `BG02_Kali_Puja_Night`: Earthen oil diyas, brass bell, marigold garlands, sacred midnight spiritual atmosphere.

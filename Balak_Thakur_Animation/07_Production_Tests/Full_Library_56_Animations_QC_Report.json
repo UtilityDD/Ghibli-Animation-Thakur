@@ -9,16 +9,16 @@
       "category": "Facial",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.23,
-        "hair_palette_delta_rgb": 14.5,
-        "cloth_palette_delta_rgb": 19.03,
+        "skin_palette_delta_rgb": 6.95,
+        "hair_palette_delta_rgb": 13.86,
+        "cloth_palette_delta_rgb": 19.16,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 0.427,
-        "max_frame_to_frame_jump": 0.697,
-        "loop_closure_delta": 0.685,
+        "mean_frame_to_frame_delta": 0.359,
+        "max_frame_to_frame_jump": 1.34,
+        "loop_closure_delta": 0.617,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
@@ -42,16 +42,16 @@
       "category": "Facial",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.39,
-        "hair_palette_delta_rgb": 14.73,
-        "cloth_palette_delta_rgb": 19.18,
+        "skin_palette_delta_rgb": 6.97,
+        "hair_palette_delta_rgb": 14.14,
+        "cloth_palette_delta_rgb": 19.24,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 2.048,
-        "max_frame_to_frame_jump": 3.844,
-        "loop_closure_delta": 0.583,
+        "mean_frame_to_frame_delta": 2.714,
+        "max_frame_to_frame_jump": 5.792,
+        "loop_closure_delta": 0.563,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
@@ -75,16 +75,16 @@
       "category": "Facial",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.19,
-        "hair_palette_delta_rgb": 14.52,
-        "cloth_palette_delta_rgb": 18.99,
+        "skin_palette_delta_rgb": 6.47,
+        "hair_palette_delta_rgb": 13.6,
+        "cloth_palette_delta_rgb": 19.15,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 0.597,
-        "max_frame_to_frame_jump": 0.978,
-        "loop_closure_delta": 0.795,
+        "mean_frame_to_frame_delta": 0.493,
+        "max_frame_to_frame_jump": 1.48,
+        "loop_closure_delta": 0.607,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
@@ -108,16 +108,16 @@
       "category": "Facial",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 6.97,
-        "hair_palette_delta_rgb": 14.79,
-        "cloth_palette_delta_rgb": 19.0,
+        "skin_palette_delta_rgb": 6.61,
+        "hair_palette_delta_rgb": 14.0,
+        "cloth_palette_delta_rgb": 19.18,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 0.344,
-        "max_frame_to_frame_jump": 0.619,
-        "loop_closure_delta": 0.558,
+        "mean_frame_to_frame_delta": 0.306,
+        "max_frame_to_frame_jump": 1.147,
+        "loop_closure_delta": 0.575,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
@@ -141,16 +141,16 @@
       "category": "Facial",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.3,
-        "hair_palette_delta_rgb": 14.6,
-        "cloth_palette_delta_rgb": 19.11,
+        "skin_palette_delta_rgb": 6.88,
+        "hair_palette_delta_rgb": 14.04,
+        "cloth_palette_delta_rgb": 19.2,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 0.433,
-        "max_frame_to_frame_jump": 0.7,
-        "loop_closure_delta": 0.69,
+        "mean_frame_to_frame_delta": 0.28,
+        "max_frame_to_frame_jump": 1.304,
+        "loop_closure_delta": 0.625,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
@@ -174,16 +174,16 @@
       "category": "Facial",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.15,
-        "hair_palette_delta_rgb": 14.74,
-        "cloth_palette_delta_rgb": 19.11,
+        "skin_palette_delta_rgb": 6.43,
+        "hair_palette_delta_rgb": 14.56,
+        "cloth_palette_delta_rgb": 19.15,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 2.093,
-        "max_frame_to_frame_jump": 3.838,
-        "loop_closure_delta": 0.72,
+        "mean_frame_to_frame_delta": 3.044,
+        "max_frame_to_frame_jump": 5.879,
+        "loop_closure_delta": 0.611,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
@@ -207,16 +207,16 @@
       "category": "Facial",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.18,
-        "hair_palette_delta_rgb": 14.73,
-        "cloth_palette_delta_rgb": 19.0,
+        "skin_palette_delta_rgb": 6.85,
+        "hair_palette_delta_rgb": 14.17,
+        "cloth_palette_delta_rgb": 19.16,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 0.443,
-        "max_frame_to_frame_jump": 0.697,
-        "loop_closure_delta": 0.694,
+        "mean_frame_to_frame_delta": 0.369,
+        "max_frame_to_frame_jump": 1.334,
+        "loop_closure_delta": 0.618,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
@@ -240,16 +240,16 @@
       "category": "Facial",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.39,
-        "hair_palette_delta_rgb": 14.72,
-        "cloth_palette_delta_rgb": 18.97,
+        "skin_palette_delta_rgb": 7.01,
+        "hair_palette_delta_rgb": 13.83,
+        "cloth_palette_delta_rgb": 19.1,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 0.463,
-        "max_frame_to_frame_jump": 0.743,
-        "loop_closure_delta": 0.694,
+        "mean_frame_to_frame_delta": 0.389,
+        "max_frame_to_frame_jump": 1.24,
+        "loop_closure_delta": 0.72,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
@@ -273,16 +273,16 @@
       "category": "Facial",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 6.98,
-        "hair_palette_delta_rgb": 14.91,
-        "cloth_palette_delta_rgb": 19.05,
+        "skin_palette_delta_rgb": 6.81,
+        "hair_palette_delta_rgb": 14.15,
+        "cloth_palette_delta_rgb": 19.24,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 0.379,
-        "max_frame_to_frame_jump": 0.603,
-        "loop_closure_delta": 0.584,
+        "mean_frame_to_frame_delta": 0.356,
+        "max_frame_to_frame_jump": 1.113,
+        "loop_closure_delta": 0.613,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
@@ -306,16 +306,16 @@
       "category": "Facial",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.08,
-        "hair_palette_delta_rgb": 14.66,
-        "cloth_palette_delta_rgb": 19.07,
+        "skin_palette_delta_rgb": 6.77,
+        "hair_palette_delta_rgb": 14.15,
+        "cloth_palette_delta_rgb": 19.1,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 0.433,
-        "max_frame_to_frame_jump": 0.716,
-        "loop_closure_delta": 0.674,
+        "mean_frame_to_frame_delta": 0.363,
+        "max_frame_to_frame_jump": 1.175,
+        "loop_closure_delta": 0.571,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
@@ -339,16 +339,16 @@
       "category": "Head",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.01,
-        "hair_palette_delta_rgb": 14.91,
-        "cloth_palette_delta_rgb": 19.06,
+        "skin_palette_delta_rgb": 6.65,
+        "hair_palette_delta_rgb": 14.14,
+        "cloth_palette_delta_rgb": 19.17,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 0.496,
-        "max_frame_to_frame_jump": 1.159,
-        "loop_closure_delta": 0.539,
+        "mean_frame_to_frame_delta": 0.273,
+        "max_frame_to_frame_jump": 1.021,
+        "loop_closure_delta": 0.588,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
@@ -372,16 +372,16 @@
       "category": "Head",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.55,
-        "hair_palette_delta_rgb": 14.73,
-        "cloth_palette_delta_rgb": 19.13,
+        "skin_palette_delta_rgb": 7.11,
+        "hair_palette_delta_rgb": 14.58,
+        "cloth_palette_delta_rgb": 19.07,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 1.128,
-        "max_frame_to_frame_jump": 3.049,
-        "loop_closure_delta": 1.002,
+        "mean_frame_to_frame_delta": 0.417,
+        "max_frame_to_frame_jump": 1.174,
+        "loop_closure_delta": 0.588,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
@@ -405,16 +405,16 @@
       "category": "Head",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.01,
-        "hair_palette_delta_rgb": 14.69,
+        "skin_palette_delta_rgb": 7.04,
+        "hair_palette_delta_rgb": 14.57,
         "cloth_palette_delta_rgb": 19.14,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 1.132,
-        "max_frame_to_frame_jump": 3.072,
-        "loop_closure_delta": 1.051,
+        "mean_frame_to_frame_delta": 0.377,
+        "max_frame_to_frame_jump": 1.135,
+        "loop_closure_delta": 0.588,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
@@ -438,16 +438,16 @@
       "category": "Head",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.54,
-        "hair_palette_delta_rgb": 14.59,
-        "cloth_palette_delta_rgb": 19.0,
+        "skin_palette_delta_rgb": 6.55,
+        "hair_palette_delta_rgb": 13.68,
+        "cloth_palette_delta_rgb": 19.09,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 0.501,
-        "max_frame_to_frame_jump": 1.138,
-        "loop_closure_delta": 0.51,
+        "mean_frame_to_frame_delta": 0.325,
+        "max_frame_to_frame_jump": 1.225,
+        "loop_closure_delta": 0.713,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
@@ -471,16 +471,16 @@
       "category": "Head",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 6.98,
-        "hair_palette_delta_rgb": 14.83,
-        "cloth_palette_delta_rgb": 18.97,
+        "skin_palette_delta_rgb": 6.4,
+        "hair_palette_delta_rgb": 14.35,
+        "cloth_palette_delta_rgb": 19.17,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 1.193,
-        "max_frame_to_frame_jump": 2.84,
-        "loop_closure_delta": 0.711,
+        "mean_frame_to_frame_delta": 0.438,
+        "max_frame_to_frame_jump": 0.718,
+        "loop_closure_delta": 0.338,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
@@ -504,16 +504,16 @@
       "category": "Head",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 6.97,
-        "hair_palette_delta_rgb": 14.63,
-        "cloth_palette_delta_rgb": 19.13,
+        "skin_palette_delta_rgb": 6.71,
+        "hair_palette_delta_rgb": 14.07,
+        "cloth_palette_delta_rgb": 19.15,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 1.62,
-        "max_frame_to_frame_jump": 3.846,
-        "loop_closure_delta": 0.717,
+        "mean_frame_to_frame_delta": 0.425,
+        "max_frame_to_frame_jump": 0.97,
+        "loop_closure_delta": 0.206,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
@@ -537,16 +537,16 @@
       "category": "Head",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.33,
-        "hair_palette_delta_rgb": 14.37,
-        "cloth_palette_delta_rgb": 19.09,
+        "skin_palette_delta_rgb": 6.5,
+        "hair_palette_delta_rgb": 13.29,
+        "cloth_palette_delta_rgb": 19.12,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 1.008,
-        "max_frame_to_frame_jump": 3.189,
-        "loop_closure_delta": 0.56,
+        "mean_frame_to_frame_delta": 0.53,
+        "max_frame_to_frame_jump": 1.383,
+        "loop_closure_delta": 0.595,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
@@ -570,16 +570,16 @@
       "category": "Head",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.08,
-        "hair_palette_delta_rgb": 14.65,
-        "cloth_palette_delta_rgb": 19.03,
+        "skin_palette_delta_rgb": 6.92,
+        "hair_palette_delta_rgb": 14.36,
+        "cloth_palette_delta_rgb": 19.14,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 1.14,
-        "max_frame_to_frame_jump": 3.002,
-        "loop_closure_delta": 1.089,
+        "mean_frame_to_frame_delta": 0.406,
+        "max_frame_to_frame_jump": 1.196,
+        "loop_closure_delta": 0.529,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
@@ -603,379 +603,16 @@
       "category": "Hands",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.57,
-        "hair_palette_delta_rgb": 14.73,
-        "cloth_palette_delta_rgb": 13.52,
+        "skin_palette_delta_rgb": 16.06,
+        "hair_palette_delta_rgb": 17.02,
+        "cloth_palette_delta_rgb": 19.08,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 1.68,
-        "max_frame_to_frame_jump": 3.593,
-        "loop_closure_delta": 0.798,
-        "motion_active": true,
-        "no_flicker_or_jumps": true
-      },
-      "export_quality": {
-        "expected_frames": 60,
-        "actual_frames": 60,
-        "dimensions": [
-          768,
-          768
-        ],
-        "rgba_transparency_clean": true,
-        "editable_blend_exists": true,
-        "mp4_preview_exists": true,
-        "gif_preview_exists": true,
-        "webm_transparent_exists": true,
-        "metadata_json_exists": true
-      }
-    },
-    "THAKUR_HANDS_EXPRESSING_SURPRISE_V001": {
-      "asset_id": "THAKUR_HANDS_EXPRESSING_SURPRISE_V001",
-      "category": "Hands",
-      "status": "PASS",
-      "character_consistency": {
-        "skin_palette_delta_rgb": 7.65,
-        "hair_palette_delta_rgb": 14.69,
-        "cloth_palette_delta_rgb": 13.48,
-        "identity_lock_verified": true
-      },
-      "animation_quality": {
-        "fps": 24,
-        "mean_frame_to_frame_delta": 1.417,
-        "max_frame_to_frame_jump": 3.424,
-        "loop_closure_delta": 0.801,
-        "motion_active": true,
-        "no_flicker_or_jumps": true
-      },
-      "export_quality": {
-        "expected_frames": 60,
-        "actual_frames": 60,
-        "dimensions": [
-          768,
-          768
-        ],
-        "rgba_transparency_clean": true,
-        "editable_blend_exists": true,
-        "mp4_preview_exists": true,
-        "gif_preview_exists": true,
-        "webm_transparent_exists": true,
-        "metadata_json_exists": true
-      }
-    },
-    "THAKUR_HANDS_FOLDING_V001": {
-      "asset_id": "THAKUR_HANDS_FOLDING_V001",
-      "category": "Hands",
-      "status": "PASS",
-      "character_consistency": {
-        "skin_palette_delta_rgb": 7.14,
-        "hair_palette_delta_rgb": 14.83,
-        "cloth_palette_delta_rgb": 13.3,
-        "identity_lock_verified": true
-      },
-      "animation_quality": {
-        "fps": 24,
-        "mean_frame_to_frame_delta": 1.101,
-        "max_frame_to_frame_jump": 3.146,
-        "loop_closure_delta": 0.803,
-        "motion_active": true,
-        "no_flicker_or_jumps": true
-      },
-      "export_quality": {
-        "expected_frames": 60,
-        "actual_frames": 60,
-        "dimensions": [
-          768,
-          768
-        ],
-        "rgba_transparency_clean": true,
-        "editable_blend_exists": true,
-        "mp4_preview_exists": true,
-        "gif_preview_exists": true,
-        "webm_transparent_exists": true,
-        "metadata_json_exists": true
-      }
-    },
-    "THAKUR_HANDS_GREETING_V001": {
-      "asset_id": "THAKUR_HANDS_GREETING_V001",
-      "category": "Hands",
-      "status": "PASS",
-      "character_consistency": {
-        "skin_palette_delta_rgb": 7.25,
-        "hair_palette_delta_rgb": 14.58,
-        "cloth_palette_delta_rgb": 13.07,
-        "identity_lock_verified": true
-      },
-      "animation_quality": {
-        "fps": 24,
-        "mean_frame_to_frame_delta": 1.354,
-        "max_frame_to_frame_jump": 4.205,
-        "loop_closure_delta": 0.812,
-        "motion_active": true,
-        "no_flicker_or_jumps": true
-      },
-      "export_quality": {
-        "expected_frames": 60,
-        "actual_frames": 60,
-        "dimensions": [
-          768,
-          768
-        ],
-        "rgba_transparency_clean": true,
-        "editable_blend_exists": true,
-        "mp4_preview_exists": true,
-        "gif_preview_exists": true,
-        "webm_transparent_exists": true,
-        "metadata_json_exists": true
-      }
-    },
-    "THAKUR_HANDS_NAMASKAR_V001": {
-      "asset_id": "THAKUR_HANDS_NAMASKAR_V001",
-      "category": "Hands",
-      "status": "PASS",
-      "character_consistency": {
-        "skin_palette_delta_rgb": 7.14,
-        "hair_palette_delta_rgb": 14.74,
-        "cloth_palette_delta_rgb": 13.11,
-        "identity_lock_verified": true
-      },
-      "animation_quality": {
-        "fps": 24,
-        "mean_frame_to_frame_delta": 1.298,
-        "max_frame_to_frame_jump": 3.958,
-        "loop_closure_delta": 0.807,
-        "motion_active": true,
-        "no_flicker_or_jumps": true
-      },
-      "export_quality": {
-        "expected_frames": 60,
-        "actual_frames": 60,
-        "dimensions": [
-          768,
-          768
-        ],
-        "rgba_transparency_clean": true,
-        "editable_blend_exists": true,
-        "mp4_preview_exists": true,
-        "gif_preview_exists": true,
-        "webm_transparent_exists": true,
-        "metadata_json_exists": true
-      }
-    },
-    "THAKUR_HANDS_PLEADING_V001": {
-      "asset_id": "THAKUR_HANDS_PLEADING_V001",
-      "category": "Hands",
-      "status": "PASS",
-      "character_consistency": {
-        "skin_palette_delta_rgb": 7.42,
-        "hair_palette_delta_rgb": 14.52,
-        "cloth_palette_delta_rgb": 13.18,
-        "identity_lock_verified": true
-      },
-      "animation_quality": {
-        "fps": 24,
-        "mean_frame_to_frame_delta": 1.35,
-        "max_frame_to_frame_jump": 3.277,
-        "loop_closure_delta": 0.807,
-        "motion_active": true,
-        "no_flicker_or_jumps": true
-      },
-      "export_quality": {
-        "expected_frames": 60,
-        "actual_frames": 60,
-        "dimensions": [
-          768,
-          768
-        ],
-        "rgba_transparency_clean": true,
-        "editable_blend_exists": true,
-        "mp4_preview_exists": true,
-        "gif_preview_exists": true,
-        "webm_transparent_exists": true,
-        "metadata_json_exists": true
-      }
-    },
-    "THAKUR_HANDS_POINTING_V001": {
-      "asset_id": "THAKUR_HANDS_POINTING_V001",
-      "category": "Hands",
-      "status": "PASS",
-      "character_consistency": {
-        "skin_palette_delta_rgb": 7.45,
-        "hair_palette_delta_rgb": 14.37,
-        "cloth_palette_delta_rgb": 13.38,
-        "identity_lock_verified": true
-      },
-      "animation_quality": {
-        "fps": 24,
-        "mean_frame_to_frame_delta": 1.521,
-        "max_frame_to_frame_jump": 3.598,
-        "loop_closure_delta": 0.806,
-        "motion_active": true,
-        "no_flicker_or_jumps": true
-      },
-      "export_quality": {
-        "expected_frames": 60,
-        "actual_frames": 60,
-        "dimensions": [
-          768,
-          768
-        ],
-        "rgba_transparency_clean": true,
-        "editable_blend_exists": true,
-        "mp4_preview_exists": true,
-        "gif_preview_exists": true,
-        "webm_transparent_exists": true,
-        "metadata_json_exists": true
-      }
-    },
-    "THAKUR_HANDS_RAISING_BLESSING_V001": {
-      "asset_id": "THAKUR_HANDS_RAISING_BLESSING_V001",
-      "category": "Hands",
-      "status": "PASS",
-      "character_consistency": {
-        "skin_palette_delta_rgb": 7.08,
-        "hair_palette_delta_rgb": 14.53,
-        "cloth_palette_delta_rgb": 13.19,
-        "identity_lock_verified": true
-      },
-      "animation_quality": {
-        "fps": 24,
-        "mean_frame_to_frame_delta": 1.141,
-        "max_frame_to_frame_jump": 2.796,
-        "loop_closure_delta": 0.804,
-        "motion_active": true,
-        "no_flicker_or_jumps": true
-      },
-      "export_quality": {
-        "expected_frames": 60,
-        "actual_frames": 60,
-        "dimensions": [
-          768,
-          768
-        ],
-        "rgba_transparency_clean": true,
-        "editable_blend_exists": true,
-        "mp4_preview_exists": true,
-        "gif_preview_exists": true,
-        "webm_transparent_exists": true,
-        "metadata_json_exists": true
-      }
-    },
-    "THAKUR_HANDS_RESTING_V001": {
-      "asset_id": "THAKUR_HANDS_RESTING_V001",
-      "category": "Hands",
-      "status": "PASS",
-      "character_consistency": {
-        "skin_palette_delta_rgb": 6.96,
-        "hair_palette_delta_rgb": 14.91,
-        "cloth_palette_delta_rgb": 18.91,
-        "identity_lock_verified": true
-      },
-      "animation_quality": {
-        "fps": 24,
-        "mean_frame_to_frame_delta": 0.394,
-        "max_frame_to_frame_jump": 0.663,
-        "loop_closure_delta": 0.655,
-        "motion_active": true,
-        "no_flicker_or_jumps": true
-      },
-      "export_quality": {
-        "expected_frames": 60,
-        "actual_frames": 60,
-        "dimensions": [
-          768,
-          768
-        ],
-        "rgba_transparency_clean": true,
-        "editable_blend_exists": true,
-        "mp4_preview_exists": true,
-        "gif_preview_exists": true,
-        "webm_transparent_exists": true,
-        "metadata_json_exists": true
-      }
-    },
-    "THAKUR_HANDS_WAVING_V001": {
-      "asset_id": "THAKUR_HANDS_WAVING_V001",
-      "category": "Hands",
-      "status": "PASS",
-      "character_consistency": {
-        "skin_palette_delta_rgb": 7.3,
-        "hair_palette_delta_rgb": 14.39,
-        "cloth_palette_delta_rgb": 13.53,
-        "identity_lock_verified": true
-      },
-      "animation_quality": {
-        "fps": 24,
-        "mean_frame_to_frame_delta": 2.002,
-        "max_frame_to_frame_jump": 4.037,
-        "loop_closure_delta": 0.783,
-        "motion_active": true,
-        "no_flicker_or_jumps": true
-      },
-      "export_quality": {
-        "expected_frames": 60,
-        "actual_frames": 60,
-        "dimensions": [
-          768,
-          768
-        ],
-        "rgba_transparency_clean": true,
-        "editable_blend_exists": true,
-        "mp4_preview_exists": true,
-        "gif_preview_exists": true,
-        "webm_transparent_exists": true,
-        "metadata_json_exists": true
-      }
-    },
-    "THAKUR_KNEELING_V001": {
-      "asset_id": "THAKUR_KNEELING_V001",
-      "category": "Sitting",
-      "status": "PASS",
-      "character_consistency": {
-        "skin_palette_delta_rgb": 10.12,
-        "hair_palette_delta_rgb": 13.82,
-        "cloth_palette_delta_rgb": 13.62,
-        "identity_lock_verified": true
-      },
-      "animation_quality": {
-        "fps": 24,
-        "mean_frame_to_frame_delta": 3.094,
-        "max_frame_to_frame_jump": 18.41,
-        "loop_closure_delta": 0.052,
-        "motion_active": true,
-        "no_flicker_or_jumps": true
-      },
-      "export_quality": {
-        "expected_frames": 60,
-        "actual_frames": 60,
-        "dimensions": [
-          768,
-          768
-        ],
-        "rgba_transparency_clean": true,
-        "editable_blend_exists": true,
-        "mp4_preview_exists": true,
-        "gif_preview_exists": true,
-        "webm_transparent_exists": true,
-        "metadata_json_exists": true
-      }
-    },
-    "THAKUR_PRAYER_SITTING_V001": {
-      "asset_id": "THAKUR_PRAYER_SITTING_V001",
-      "category": "Sitting",
-      "status": "PASS",
-      "character_consistency": {
-        "skin_palette_delta_rgb": 7.47,
-        "hair_palette_delta_rgb": 14.42,
-        "cloth_palette_delta_rgb": 14.51,
-        "identity_lock_verified": true
-      },
-      "animation_quality": {
-        "fps": 24,
-        "mean_frame_to_frame_delta": 0.588,
-        "max_frame_to_frame_jump": 2.242,
-        "loop_closure_delta": 0.779,
+        "mean_frame_to_frame_delta": 0.537,
+        "max_frame_to_frame_jump": 1.458,
+        "loop_closure_delta": 0.416,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
@@ -994,27 +631,390 @@
         "metadata_json_exists": true
       }
     },
+    "THAKUR_HANDS_EXPRESSING_SURPRISE_V001": {
+      "asset_id": "THAKUR_HANDS_EXPRESSING_SURPRISE_V001",
+      "category": "Hands",
+      "status": "PASS",
+      "character_consistency": {
+        "skin_palette_delta_rgb": 16.09,
+        "hair_palette_delta_rgb": 16.89,
+        "cloth_palette_delta_rgb": 19.11,
+        "identity_lock_verified": true
+      },
+      "animation_quality": {
+        "fps": 24,
+        "mean_frame_to_frame_delta": 0.535,
+        "max_frame_to_frame_jump": 1.436,
+        "loop_closure_delta": 0.416,
+        "motion_active": true,
+        "no_flicker_or_jumps": true
+      },
+      "export_quality": {
+        "expected_frames": 96,
+        "actual_frames": 96,
+        "dimensions": [
+          768,
+          768
+        ],
+        "rgba_transparency_clean": true,
+        "editable_blend_exists": true,
+        "mp4_preview_exists": true,
+        "gif_preview_exists": true,
+        "webm_transparent_exists": true,
+        "metadata_json_exists": true
+      }
+    },
+    "THAKUR_HANDS_FOLDING_V001": {
+      "asset_id": "THAKUR_HANDS_FOLDING_V001",
+      "category": "Hands",
+      "status": "PASS",
+      "character_consistency": {
+        "skin_palette_delta_rgb": 16.04,
+        "hair_palette_delta_rgb": 16.17,
+        "cloth_palette_delta_rgb": 19.27,
+        "identity_lock_verified": true
+      },
+      "animation_quality": {
+        "fps": 24,
+        "mean_frame_to_frame_delta": 0.733,
+        "max_frame_to_frame_jump": 1.778,
+        "loop_closure_delta": 0.407,
+        "motion_active": true,
+        "no_flicker_or_jumps": true
+      },
+      "export_quality": {
+        "expected_frames": 96,
+        "actual_frames": 96,
+        "dimensions": [
+          768,
+          768
+        ],
+        "rgba_transparency_clean": true,
+        "editable_blend_exists": true,
+        "mp4_preview_exists": true,
+        "gif_preview_exists": true,
+        "webm_transparent_exists": true,
+        "metadata_json_exists": true
+      }
+    },
+    "THAKUR_HANDS_GREETING_V001": {
+      "asset_id": "THAKUR_HANDS_GREETING_V001",
+      "category": "Hands",
+      "status": "PASS",
+      "character_consistency": {
+        "skin_palette_delta_rgb": 16.18,
+        "hair_palette_delta_rgb": 16.09,
+        "cloth_palette_delta_rgb": 18.88,
+        "identity_lock_verified": true
+      },
+      "animation_quality": {
+        "fps": 24,
+        "mean_frame_to_frame_delta": 0.872,
+        "max_frame_to_frame_jump": 2.321,
+        "loop_closure_delta": 0.409,
+        "motion_active": true,
+        "no_flicker_or_jumps": true
+      },
+      "export_quality": {
+        "expected_frames": 96,
+        "actual_frames": 96,
+        "dimensions": [
+          768,
+          768
+        ],
+        "rgba_transparency_clean": true,
+        "editable_blend_exists": true,
+        "mp4_preview_exists": true,
+        "gif_preview_exists": true,
+        "webm_transparent_exists": true,
+        "metadata_json_exists": true
+      }
+    },
+    "THAKUR_HANDS_NAMASKAR_V001": {
+      "asset_id": "THAKUR_HANDS_NAMASKAR_V001",
+      "category": "Hands",
+      "status": "PASS",
+      "character_consistency": {
+        "skin_palette_delta_rgb": 16.18,
+        "hair_palette_delta_rgb": 16.05,
+        "cloth_palette_delta_rgb": 18.9,
+        "identity_lock_verified": true
+      },
+      "animation_quality": {
+        "fps": 24,
+        "mean_frame_to_frame_delta": 0.876,
+        "max_frame_to_frame_jump": 2.333,
+        "loop_closure_delta": 0.409,
+        "motion_active": true,
+        "no_flicker_or_jumps": true
+      },
+      "export_quality": {
+        "expected_frames": 96,
+        "actual_frames": 96,
+        "dimensions": [
+          768,
+          768
+        ],
+        "rgba_transparency_clean": true,
+        "editable_blend_exists": true,
+        "mp4_preview_exists": true,
+        "gif_preview_exists": true,
+        "webm_transparent_exists": true,
+        "metadata_json_exists": true
+      }
+    },
+    "THAKUR_HANDS_PLEADING_V001": {
+      "asset_id": "THAKUR_HANDS_PLEADING_V001",
+      "category": "Hands",
+      "status": "PASS",
+      "character_consistency": {
+        "skin_palette_delta_rgb": 15.84,
+        "hair_palette_delta_rgb": 16.74,
+        "cloth_palette_delta_rgb": 18.93,
+        "identity_lock_verified": true
+      },
+      "animation_quality": {
+        "fps": 24,
+        "mean_frame_to_frame_delta": 0.574,
+        "max_frame_to_frame_jump": 1.489,
+        "loop_closure_delta": 0.41,
+        "motion_active": true,
+        "no_flicker_or_jumps": true
+      },
+      "export_quality": {
+        "expected_frames": 96,
+        "actual_frames": 96,
+        "dimensions": [
+          768,
+          768
+        ],
+        "rgba_transparency_clean": true,
+        "editable_blend_exists": true,
+        "mp4_preview_exists": true,
+        "gif_preview_exists": true,
+        "webm_transparent_exists": true,
+        "metadata_json_exists": true
+      }
+    },
+    "THAKUR_HANDS_POINTING_V001": {
+      "asset_id": "THAKUR_HANDS_POINTING_V001",
+      "category": "Hands",
+      "status": "PASS",
+      "character_consistency": {
+        "skin_palette_delta_rgb": 16.0,
+        "hair_palette_delta_rgb": 16.55,
+        "cloth_palette_delta_rgb": 19.03,
+        "identity_lock_verified": true
+      },
+      "animation_quality": {
+        "fps": 24,
+        "mean_frame_to_frame_delta": 0.84,
+        "max_frame_to_frame_jump": 2.108,
+        "loop_closure_delta": 0.415,
+        "motion_active": true,
+        "no_flicker_or_jumps": true
+      },
+      "export_quality": {
+        "expected_frames": 96,
+        "actual_frames": 96,
+        "dimensions": [
+          768,
+          768
+        ],
+        "rgba_transparency_clean": true,
+        "editable_blend_exists": true,
+        "mp4_preview_exists": true,
+        "gif_preview_exists": true,
+        "webm_transparent_exists": true,
+        "metadata_json_exists": true
+      }
+    },
+    "THAKUR_HANDS_RAISING_BLESSING_V001": {
+      "asset_id": "THAKUR_HANDS_RAISING_BLESSING_V001",
+      "category": "Hands",
+      "status": "PASS",
+      "character_consistency": {
+        "skin_palette_delta_rgb": 16.14,
+        "hair_palette_delta_rgb": 16.57,
+        "cloth_palette_delta_rgb": 19.42,
+        "identity_lock_verified": true
+      },
+      "animation_quality": {
+        "fps": 24,
+        "mean_frame_to_frame_delta": 0.948,
+        "max_frame_to_frame_jump": 2.511,
+        "loop_closure_delta": 0.407,
+        "motion_active": true,
+        "no_flicker_or_jumps": true
+      },
+      "export_quality": {
+        "expected_frames": 96,
+        "actual_frames": 96,
+        "dimensions": [
+          768,
+          768
+        ],
+        "rgba_transparency_clean": true,
+        "editable_blend_exists": true,
+        "mp4_preview_exists": true,
+        "gif_preview_exists": true,
+        "webm_transparent_exists": true,
+        "metadata_json_exists": true
+      }
+    },
+    "THAKUR_HANDS_RESTING_V001": {
+      "asset_id": "THAKUR_HANDS_RESTING_V001",
+      "category": "Hands",
+      "status": "PASS",
+      "character_consistency": {
+        "skin_palette_delta_rgb": 16.18,
+        "hair_palette_delta_rgb": 16.65,
+        "cloth_palette_delta_rgb": 19.02,
+        "identity_lock_verified": true
+      },
+      "animation_quality": {
+        "fps": 24,
+        "mean_frame_to_frame_delta": 0.121,
+        "max_frame_to_frame_jump": 0.171,
+        "loop_closure_delta": 0.164,
+        "motion_active": true,
+        "no_flicker_or_jumps": true
+      },
+      "export_quality": {
+        "expected_frames": 96,
+        "actual_frames": 96,
+        "dimensions": [
+          768,
+          768
+        ],
+        "rgba_transparency_clean": true,
+        "editable_blend_exists": true,
+        "mp4_preview_exists": true,
+        "gif_preview_exists": true,
+        "webm_transparent_exists": true,
+        "metadata_json_exists": true
+      }
+    },
+    "THAKUR_HANDS_WAVING_V001": {
+      "asset_id": "THAKUR_HANDS_WAVING_V001",
+      "category": "Hands",
+      "status": "PASS",
+      "character_consistency": {
+        "skin_palette_delta_rgb": 16.04,
+        "hair_palette_delta_rgb": 17.14,
+        "cloth_palette_delta_rgb": 19.16,
+        "identity_lock_verified": true
+      },
+      "animation_quality": {
+        "fps": 24,
+        "mean_frame_to_frame_delta": 1.146,
+        "max_frame_to_frame_jump": 3.398,
+        "loop_closure_delta": 0.415,
+        "motion_active": true,
+        "no_flicker_or_jumps": true
+      },
+      "export_quality": {
+        "expected_frames": 96,
+        "actual_frames": 96,
+        "dimensions": [
+          768,
+          768
+        ],
+        "rgba_transparency_clean": true,
+        "editable_blend_exists": true,
+        "mp4_preview_exists": true,
+        "gif_preview_exists": true,
+        "webm_transparent_exists": true,
+        "metadata_json_exists": true
+      }
+    },
+    "THAKUR_KNEELING_V001": {
+      "asset_id": "THAKUR_KNEELING_V001",
+      "category": "Sitting",
+      "status": "PASS",
+      "character_consistency": {
+        "skin_palette_delta_rgb": 10.0,
+        "hair_palette_delta_rgb": 16.66,
+        "cloth_palette_delta_rgb": 13.14,
+        "identity_lock_verified": true
+      },
+      "animation_quality": {
+        "fps": 24,
+        "mean_frame_to_frame_delta": 0.683,
+        "max_frame_to_frame_jump": 1.425,
+        "loop_closure_delta": 49.188,
+        "motion_active": true,
+        "no_flicker_or_jumps": true
+      },
+      "export_quality": {
+        "expected_frames": 72,
+        "actual_frames": 72,
+        "dimensions": [
+          768,
+          768
+        ],
+        "rgba_transparency_clean": true,
+        "editable_blend_exists": true,
+        "mp4_preview_exists": true,
+        "gif_preview_exists": true,
+        "webm_transparent_exists": true,
+        "metadata_json_exists": true
+      }
+    },
+    "THAKUR_PRAYER_SITTING_V001": {
+      "asset_id": "THAKUR_PRAYER_SITTING_V001",
+      "category": "Sitting",
+      "status": "PASS",
+      "character_consistency": {
+        "skin_palette_delta_rgb": 16.17,
+        "hair_palette_delta_rgb": 15.88,
+        "cloth_palette_delta_rgb": 18.81,
+        "identity_lock_verified": true
+      },
+      "animation_quality": {
+        "fps": 24,
+        "mean_frame_to_frame_delta": 0.693,
+        "max_frame_to_frame_jump": 10.456,
+        "loop_closure_delta": 0.108,
+        "motion_active": true,
+        "no_flicker_or_jumps": true
+      },
+      "export_quality": {
+        "expected_frames": 120,
+        "actual_frames": 120,
+        "dimensions": [
+          768,
+          768
+        ],
+        "rgba_transparency_clean": true,
+        "editable_blend_exists": true,
+        "mp4_preview_exists": true,
+        "gif_preview_exists": true,
+        "webm_transparent_exists": true,
+        "metadata_json_exists": true
+      }
+    },
     "THAKUR_SITTING_AND_LAUGHING_V001": {
       "asset_id": "THAKUR_SITTING_AND_LAUGHING_V001",
       "category": "Sitting",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.29,
-        "hair_palette_delta_rgb": 14.73,
-        "cloth_palette_delta_rgb": 18.96,
+        "skin_palette_delta_rgb": 16.18,
+        "hair_palette_delta_rgb": 16.74,
+        "cloth_palette_delta_rgb": 19.34,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 0.989,
-        "max_frame_to_frame_jump": 1.539,
-        "loop_closure_delta": 1.556,
+        "mean_frame_to_frame_delta": 1.426,
+        "max_frame_to_frame_jump": 4.713,
+        "loop_closure_delta": 0.395,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
       "export_quality": {
-        "expected_frames": 60,
-        "actual_frames": 60,
+        "expected_frames": 84,
+        "actual_frames": 84,
         "dimensions": [
           768,
           768
@@ -1032,22 +1032,22 @@
       "category": "Sitting",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.18,
-        "hair_palette_delta_rgb": 14.35,
-        "cloth_palette_delta_rgb": 18.95,
+        "skin_palette_delta_rgb": 16.17,
+        "hair_palette_delta_rgb": 16.78,
+        "cloth_palette_delta_rgb": 19.35,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 0.349,
-        "max_frame_to_frame_jump": 0.545,
-        "loop_closure_delta": 0.554,
+        "mean_frame_to_frame_delta": 0.301,
+        "max_frame_to_frame_jump": 0.787,
+        "loop_closure_delta": 0.391,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
       "export_quality": {
-        "expected_frames": 60,
-        "actual_frames": 60,
+        "expected_frames": 84,
+        "actual_frames": 84,
         "dimensions": [
           768,
           768
@@ -1065,22 +1065,22 @@
       "category": "Sitting",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.12,
-        "hair_palette_delta_rgb": 14.72,
-        "cloth_palette_delta_rgb": 13.26,
+        "skin_palette_delta_rgb": 15.7,
+        "hair_palette_delta_rgb": 16.12,
+        "cloth_palette_delta_rgb": 19.29,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 1.579,
-        "max_frame_to_frame_jump": 3.61,
-        "loop_closure_delta": 0.741,
+        "mean_frame_to_frame_delta": 0.752,
+        "max_frame_to_frame_jump": 2.073,
+        "loop_closure_delta": 0.4,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
       "export_quality": {
-        "expected_frames": 72,
-        "actual_frames": 72,
+        "expected_frames": 96,
+        "actual_frames": 96,
         "dimensions": [
           768,
           768
@@ -1098,22 +1098,22 @@
       "category": "Sitting",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 6.94,
-        "hair_palette_delta_rgb": 14.78,
-        "cloth_palette_delta_rgb": 18.93,
+        "skin_palette_delta_rgb": 16.27,
+        "hair_palette_delta_rgb": 16.68,
+        "cloth_palette_delta_rgb": 19.02,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 0.36,
-        "max_frame_to_frame_jump": 0.586,
-        "loop_closure_delta": 0.58,
+        "mean_frame_to_frame_delta": 0.142,
+        "max_frame_to_frame_jump": 0.241,
+        "loop_closure_delta": 0.177,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
       "export_quality": {
-        "expected_frames": 72,
-        "actual_frames": 72,
+        "expected_frames": 96,
+        "actual_frames": 96,
         "dimensions": [
           768,
           768
@@ -1131,22 +1131,22 @@
       "category": "Sitting",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 12.13,
-        "hair_palette_delta_rgb": 15.14,
-        "cloth_palette_delta_rgb": 13.51,
+        "skin_palette_delta_rgb": 10.0,
+        "hair_palette_delta_rgb": 16.66,
+        "cloth_palette_delta_rgb": 13.14,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 2.612,
-        "max_frame_to_frame_jump": 16.496,
-        "loop_closure_delta": 48.951,
+        "mean_frame_to_frame_delta": 0.683,
+        "max_frame_to_frame_jump": 1.425,
+        "loop_closure_delta": 49.188,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
       "export_quality": {
-        "expected_frames": 60,
-        "actual_frames": 60,
+        "expected_frames": 72,
+        "actual_frames": 72,
         "dimensions": [
           768,
           768
@@ -1164,22 +1164,22 @@
       "category": "Sitting",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.81,
-        "hair_palette_delta_rgb": 13.83,
-        "cloth_palette_delta_rgb": 9.56,
+        "skin_palette_delta_rgb": 15.42,
+        "hair_palette_delta_rgb": 15.32,
+        "cloth_palette_delta_rgb": 19.53,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 0.341,
-        "max_frame_to_frame_jump": 0.537,
-        "loop_closure_delta": 0.538,
+        "mean_frame_to_frame_delta": 0.411,
+        "max_frame_to_frame_jump": 0.855,
+        "loop_closure_delta": 0.165,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
       "export_quality": {
-        "expected_frames": 60,
-        "actual_frames": 60,
+        "expected_frames": 84,
+        "actual_frames": 84,
         "dimensions": [
           768,
           768
@@ -1197,22 +1197,22 @@
       "category": "Sitting",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.58,
-        "hair_palette_delta_rgb": 14.63,
-        "cloth_palette_delta_rgb": 18.85,
+        "skin_palette_delta_rgb": 15.54,
+        "hair_palette_delta_rgb": 15.41,
+        "cloth_palette_delta_rgb": 19.48,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 0.366,
-        "max_frame_to_frame_jump": 0.587,
-        "loop_closure_delta": 0.573,
+        "mean_frame_to_frame_delta": 0.322,
+        "max_frame_to_frame_jump": 0.818,
+        "loop_closure_delta": 0.165,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
       "export_quality": {
-        "expected_frames": 60,
-        "actual_frames": 60,
+        "expected_frames": 84,
+        "actual_frames": 84,
         "dimensions": [
           768,
           768
@@ -1230,22 +1230,22 @@
       "category": "Sitting",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.27,
-        "hair_palette_delta_rgb": 14.49,
-        "cloth_palette_delta_rgb": 9.67,
+        "skin_palette_delta_rgb": 15.69,
+        "hair_palette_delta_rgb": 16.12,
+        "cloth_palette_delta_rgb": 19.34,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 0.335,
-        "max_frame_to_frame_jump": 0.556,
-        "loop_closure_delta": 0.561,
+        "mean_frame_to_frame_delta": 0.738,
+        "max_frame_to_frame_jump": 2.046,
+        "loop_closure_delta": 0.4,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
       "export_quality": {
-        "expected_frames": 72,
-        "actual_frames": 72,
+        "expected_frames": 96,
+        "actual_frames": 96,
         "dimensions": [
           768,
           768
@@ -1263,22 +1263,22 @@
       "category": "Sitting",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 11.82,
-        "hair_palette_delta_rgb": 14.66,
-        "cloth_palette_delta_rgb": 13.53,
+        "skin_palette_delta_rgb": 12.08,
+        "hair_palette_delta_rgb": 16.64,
+        "cloth_palette_delta_rgb": 15.08,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 0.172,
-        "max_frame_to_frame_jump": 0.306,
-        "loop_closure_delta": 48.951,
+        "mean_frame_to_frame_delta": 0.719,
+        "max_frame_to_frame_jump": 2.877,
+        "loop_closure_delta": 49.188,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
       "export_quality": {
-        "expected_frames": 60,
-        "actual_frames": 60,
+        "expected_frames": 72,
+        "actual_frames": 72,
         "dimensions": [
           768,
           768
@@ -1296,22 +1296,22 @@
       "category": "Devotional",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.56,
-        "hair_palette_delta_rgb": 14.69,
-        "cloth_palette_delta_rgb": 13.18,
+        "skin_palette_delta_rgb": 16.14,
+        "hair_palette_delta_rgb": 16.01,
+        "cloth_palette_delta_rgb": 18.88,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 1.428,
-        "max_frame_to_frame_jump": 4.559,
-        "loop_closure_delta": 0.757,
+        "mean_frame_to_frame_delta": 0.711,
+        "max_frame_to_frame_jump": 10.442,
+        "loop_closure_delta": 0.137,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
       "export_quality": {
-        "expected_frames": 72,
-        "actual_frames": 72,
+        "expected_frames": 96,
+        "actual_frames": 96,
         "dimensions": [
           768,
           768
@@ -1329,22 +1329,22 @@
       "category": "Devotional",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.56,
-        "hair_palette_delta_rgb": 14.93,
-        "cloth_palette_delta_rgb": 18.98,
+        "skin_palette_delta_rgb": 16.24,
+        "hair_palette_delta_rgb": 16.88,
+        "cloth_palette_delta_rgb": 19.1,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 0.282,
-        "max_frame_to_frame_jump": 0.461,
-        "loop_closure_delta": 0.442,
+        "mean_frame_to_frame_delta": 0.255,
+        "max_frame_to_frame_jump": 0.702,
+        "loop_closure_delta": 0.137,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
       "export_quality": {
-        "expected_frames": 72,
-        "actual_frames": 72,
+        "expected_frames": 96,
+        "actual_frames": 96,
         "dimensions": [
           768,
           768
@@ -1362,16 +1362,16 @@
       "category": "Walking",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 18.54,
-        "hair_palette_delta_rgb": 15.54,
-        "cloth_palette_delta_rgb": 4.84,
+        "skin_palette_delta_rgb": 5.88,
+        "hair_palette_delta_rgb": 16.35,
+        "cloth_palette_delta_rgb": 9.19,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 1.672,
-        "max_frame_to_frame_jump": 2.493,
-        "loop_closure_delta": 2.556,
+        "mean_frame_to_frame_delta": 1.125,
+        "max_frame_to_frame_jump": 1.991,
+        "loop_closure_delta": 1.425,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
@@ -1395,16 +1395,16 @@
       "category": "Walking",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 19.14,
-        "hair_palette_delta_rgb": 14.02,
-        "cloth_palette_delta_rgb": 4.56,
+        "skin_palette_delta_rgb": 5.83,
+        "hair_palette_delta_rgb": 16.7,
+        "cloth_palette_delta_rgb": 9.25,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 0.213,
-        "max_frame_to_frame_jump": 0.439,
-        "loop_closure_delta": 0.435,
+        "mean_frame_to_frame_delta": 0.089,
+        "max_frame_to_frame_jump": 1.069,
+        "loop_closure_delta": 0.0,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
@@ -1428,22 +1428,22 @@
       "category": "Walking",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 17.49,
-        "hair_palette_delta_rgb": 13.61,
-        "cloth_palette_delta_rgb": 4.79,
+        "skin_palette_delta_rgb": 8.22,
+        "hair_palette_delta_rgb": 10.79,
+        "cloth_palette_delta_rgb": 7.97,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 1.781,
-        "max_frame_to_frame_jump": 2.367,
-        "loop_closure_delta": 2.511,
+        "mean_frame_to_frame_delta": 0.516,
+        "max_frame_to_frame_jump": 0.666,
+        "loop_closure_delta": 1.284,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
       "export_quality": {
-        "expected_frames": 60,
-        "actual_frames": 60,
+        "expected_frames": 120,
+        "actual_frames": 120,
         "dimensions": [
           768,
           768
@@ -1461,22 +1461,22 @@
       "category": "Walking",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 15.91,
-        "hair_palette_delta_rgb": 12.22,
-        "cloth_palette_delta_rgb": 3.74,
+        "skin_palette_delta_rgb": 11.84,
+        "hair_palette_delta_rgb": 4.56,
+        "cloth_palette_delta_rgb": 10.34,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 3.585,
-        "max_frame_to_frame_jump": 5.655,
-        "loop_closure_delta": 2.511,
+        "mean_frame_to_frame_delta": 0.931,
+        "max_frame_to_frame_jump": 2.451,
+        "loop_closure_delta": 0.048,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
       "export_quality": {
-        "expected_frames": 48,
-        "actual_frames": 48,
+        "expected_frames": 96,
+        "actual_frames": 96,
         "dimensions": [
           768,
           768
@@ -1494,22 +1494,22 @@
       "category": "Walking",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 16.06,
-        "hair_palette_delta_rgb": 11.91,
-        "cloth_palette_delta_rgb": 3.7,
+        "skin_palette_delta_rgb": 11.92,
+        "hair_palette_delta_rgb": 4.56,
+        "cloth_palette_delta_rgb": 10.31,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 3.183,
-        "max_frame_to_frame_jump": 4.649,
-        "loop_closure_delta": 1.874,
+        "mean_frame_to_frame_delta": 0.596,
+        "max_frame_to_frame_jump": 1.892,
+        "loop_closure_delta": 0.0,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
       "export_quality": {
-        "expected_frames": 72,
-        "actual_frames": 72,
+        "expected_frames": 144,
+        "actual_frames": 144,
         "dimensions": [
           768,
           768
@@ -1527,22 +1527,22 @@
       "category": "Running",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 17.26,
-        "hair_palette_delta_rgb": 13.67,
-        "cloth_palette_delta_rgb": 3.24,
+        "skin_palette_delta_rgb": 12.83,
+        "hair_palette_delta_rgb": 6.32,
+        "cloth_palette_delta_rgb": 10.2,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 5.906,
-        "max_frame_to_frame_jump": 13.543,
-        "loop_closure_delta": 2.614,
+        "mean_frame_to_frame_delta": 2.893,
+        "max_frame_to_frame_jump": 7.148,
+        "loop_closure_delta": 0.888,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
       "export_quality": {
-        "expected_frames": 48,
-        "actual_frames": 48,
+        "expected_frames": 72,
+        "actual_frames": 72,
         "dimensions": [
           768,
           768
@@ -1560,22 +1560,22 @@
       "category": "Running",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 18.55,
-        "hair_palette_delta_rgb": 15.74,
-        "cloth_palette_delta_rgb": 2.52,
+        "skin_palette_delta_rgb": 14.29,
+        "hair_palette_delta_rgb": 6.52,
+        "cloth_palette_delta_rgb": 11.51,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 6.985,
-        "max_frame_to_frame_jump": 11.043,
-        "loop_closure_delta": 6.673,
+        "mean_frame_to_frame_delta": 0.944,
+        "max_frame_to_frame_jump": 3.058,
+        "loop_closure_delta": 0.0,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
       "export_quality": {
-        "expected_frames": 32,
-        "actual_frames": 32,
+        "expected_frames": 64,
+        "actual_frames": 64,
         "dimensions": [
           768,
           768
@@ -1593,22 +1593,22 @@
       "category": "Emotional",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.43,
-        "hair_palette_delta_rgb": 14.43,
-        "cloth_palette_delta_rgb": 13.31,
+        "skin_palette_delta_rgb": 15.67,
+        "hair_palette_delta_rgb": 15.88,
+        "cloth_palette_delta_rgb": 19.25,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 1.109,
-        "max_frame_to_frame_jump": 3.309,
-        "loop_closure_delta": 0.748,
+        "mean_frame_to_frame_delta": 0.606,
+        "max_frame_to_frame_jump": 8.663,
+        "loop_closure_delta": 0.137,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
       "export_quality": {
-        "expected_frames": 72,
-        "actual_frames": 72,
+        "expected_frames": 96,
+        "actual_frames": 96,
         "dimensions": [
           768,
           768
@@ -1626,22 +1626,22 @@
       "category": "Emotional",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.55,
-        "hair_palette_delta_rgb": 14.82,
-        "cloth_palette_delta_rgb": 13.23,
+        "skin_palette_delta_rgb": 15.92,
+        "hair_palette_delta_rgb": 16.32,
+        "cloth_palette_delta_rgb": 18.89,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 1.15,
-        "max_frame_to_frame_jump": 3.504,
-        "loop_closure_delta": 0.75,
+        "mean_frame_to_frame_delta": 0.86,
+        "max_frame_to_frame_jump": 2.466,
+        "loop_closure_delta": 0.403,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
       "export_quality": {
-        "expected_frames": 72,
-        "actual_frames": 72,
+        "expected_frames": 96,
+        "actual_frames": 96,
         "dimensions": [
           768,
           768
@@ -1659,22 +1659,22 @@
       "category": "Emotional",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.22,
-        "hair_palette_delta_rgb": 14.53,
-        "cloth_palette_delta_rgb": 13.44,
+        "skin_palette_delta_rgb": 15.59,
+        "hair_palette_delta_rgb": 16.53,
+        "cloth_palette_delta_rgb": 19.01,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 1.355,
-        "max_frame_to_frame_jump": 3.589,
-        "loop_closure_delta": 0.739,
+        "mean_frame_to_frame_delta": 0.529,
+        "max_frame_to_frame_jump": 6.42,
+        "loop_closure_delta": 0.137,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
       "export_quality": {
-        "expected_frames": 72,
-        "actual_frames": 72,
+        "expected_frames": 96,
+        "actual_frames": 96,
         "dimensions": [
           768,
           768
@@ -1692,22 +1692,22 @@
       "category": "Emotional",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.28,
-        "hair_palette_delta_rgb": 14.23,
-        "cloth_palette_delta_rgb": 13.13,
+        "skin_palette_delta_rgb": 16.0,
+        "hair_palette_delta_rgb": 16.23,
+        "cloth_palette_delta_rgb": 19.34,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 1.249,
-        "max_frame_to_frame_jump": 3.337,
-        "loop_closure_delta": 0.727,
+        "mean_frame_to_frame_delta": 0.759,
+        "max_frame_to_frame_jump": 10.526,
+        "loop_closure_delta": 0.137,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
       "export_quality": {
-        "expected_frames": 72,
-        "actual_frames": 72,
+        "expected_frames": 96,
+        "actual_frames": 96,
         "dimensions": [
           768,
           768
@@ -1725,22 +1725,22 @@
       "category": "Emotional",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.26,
-        "hair_palette_delta_rgb": 14.73,
-        "cloth_palette_delta_rgb": 13.3,
+        "skin_palette_delta_rgb": 15.69,
+        "hair_palette_delta_rgb": 15.63,
+        "cloth_palette_delta_rgb": 19.22,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 1.082,
-        "max_frame_to_frame_jump": 3.187,
-        "loop_closure_delta": 0.747,
+        "mean_frame_to_frame_delta": 0.599,
+        "max_frame_to_frame_jump": 8.55,
+        "loop_closure_delta": 0.137,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
       "export_quality": {
-        "expected_frames": 72,
-        "actual_frames": 72,
+        "expected_frames": 96,
+        "actual_frames": 96,
         "dimensions": [
           768,
           768
@@ -1758,22 +1758,22 @@
       "category": "Emotional",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.64,
-        "hair_palette_delta_rgb": 14.55,
-        "cloth_palette_delta_rgb": 13.13,
+        "skin_palette_delta_rgb": 15.67,
+        "hair_palette_delta_rgb": 16.27,
+        "cloth_palette_delta_rgb": 18.87,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 1.433,
-        "max_frame_to_frame_jump": 3.456,
-        "loop_closure_delta": 0.738,
+        "mean_frame_to_frame_delta": 0.551,
+        "max_frame_to_frame_jump": 6.548,
+        "loop_closure_delta": 0.137,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
       "export_quality": {
-        "expected_frames": 72,
-        "actual_frames": 72,
+        "expected_frames": 96,
+        "actual_frames": 96,
         "dimensions": [
           768,
           768
@@ -1791,22 +1791,22 @@
       "category": "Emotional",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.25,
-        "hair_palette_delta_rgb": 14.68,
-        "cloth_palette_delta_rgb": 19.01,
+        "skin_palette_delta_rgb": 16.16,
+        "hair_palette_delta_rgb": 16.81,
+        "cloth_palette_delta_rgb": 19.25,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 1.243,
-        "max_frame_to_frame_jump": 2.668,
-        "loop_closure_delta": 0.745,
+        "mean_frame_to_frame_delta": 1.416,
+        "max_frame_to_frame_jump": 4.701,
+        "loop_closure_delta": 0.377,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
       "export_quality": {
-        "expected_frames": 72,
-        "actual_frames": 72,
+        "expected_frames": 96,
+        "actual_frames": 96,
         "dimensions": [
           768,
           768
@@ -1824,22 +1824,22 @@
       "category": "Emotional",
       "status": "PASS",
       "character_consistency": {
-        "skin_palette_delta_rgb": 7.43,
-        "hair_palette_delta_rgb": 14.46,
-        "cloth_palette_delta_rgb": 13.46,
+        "skin_palette_delta_rgb": 15.81,
+        "hair_palette_delta_rgb": 16.7,
+        "cloth_palette_delta_rgb": 19.07,
         "identity_lock_verified": true
       },
       "animation_quality": {
         "fps": 24,
-        "mean_frame_to_frame_delta": 1.275,
-        "max_frame_to_frame_jump": 3.682,
-        "loop_closure_delta": 0.748,
+        "mean_frame_to_frame_delta": 0.544,
+        "max_frame_to_frame_jump": 6.58,
+        "loop_closure_delta": 0.137,
         "motion_active": true,
         "no_flicker_or_jumps": true
       },
       "export_quality": {
-        "expected_frames": 72,
-        "actual_frames": 72,
+        "expected_frames": 96,
+        "actual_frames": 96,
         "dimensions": [
           768,
           768

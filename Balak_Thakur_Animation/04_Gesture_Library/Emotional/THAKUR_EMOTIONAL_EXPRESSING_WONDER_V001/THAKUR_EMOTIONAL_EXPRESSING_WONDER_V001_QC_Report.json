@@ -3,22 +3,22 @@
   "category": "Emotional",
   "status": "PASS",
   "character_consistency": {
-    "skin_palette_delta_rgb": 7.64,
-    "hair_palette_delta_rgb": 14.55,
-    "cloth_palette_delta_rgb": 13.13,
+    "skin_palette_delta_rgb": 15.67,
+    "hair_palette_delta_rgb": 16.27,
+    "cloth_palette_delta_rgb": 18.87,
     "identity_lock_verified": true
   },
   "animation_quality": {
     "fps": 24,
-    "mean_frame_to_frame_delta": 1.433,
-    "max_frame_to_frame_jump": 3.456,
-    "loop_closure_delta": 0.738,
+    "mean_frame_to_frame_delta": 0.551,
+    "max_frame_to_frame_jump": 6.548,
+    "loop_closure_delta": 0.137,
     "motion_active": true,
     "no_flicker_or_jumps": true
   },
   "export_quality": {
-    "expected_frames": 72,
-    "actual_frames": 72,
+    "expected_frames": 96,
+    "actual_frames": 96,
     "dimensions": [
       768,
       768

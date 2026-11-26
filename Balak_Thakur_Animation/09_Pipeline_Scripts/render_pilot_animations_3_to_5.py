@@ -278,6 +278,9 @@ def extract_8_keyposes_from_sheet(sheet_path: Path, save_sheet_copy: Path, targe
     return aligned_poses
 
 
+_FLOW_PAIR = {"key": None}
+
+
 def interpolate_flow_rgba(pose_a: np.ndarray, pose_b: np.ndarray, u: float):
     """
     Dense Optical-Flow (DIS / Farneback) bi-directional motion-compensated interpolation between key pose A and key pose B.
@@ -288,26 +291,33 @@ def interpolate_flow_rgba(pose_a: np.ndarray, pose_b: np.ndarray, u: float):
     if u >= 0.999:
         return pose_b.copy()
 
-    # Compute grayscale + alpha weighted structural representation for flow
-    ga = cv2.cvtColor(pose_a[:, :, :3], cv2.COLOR_RGB2GRAY)
-    gb = cv2.cvtColor(pose_b[:, :, :3], cv2.COLOR_RGB2GRAY)
-    aa = (pose_a[:, :, 3].astype(np.float32) / 255.0)
-    ab = (pose_b[:, :, 3].astype(np.float32) / 255.0)
-    fa = (ga.astype(np.float32) * aa).astype(np.uint8)
-    fb = (gb.astype(np.float32) * ab).astype(np.uint8)
+    key = (id(pose_a), id(pose_b))
+    if _FLOW_PAIR.get("key") != key:
+        # Compute grayscale + alpha weighted structural representation for flow
+        ga = cv2.cvtColor(pose_a[:, :, :3], cv2.COLOR_RGB2GRAY)
+        gb = cv2.cvtColor(pose_b[:, :, :3], cv2.COLOR_RGB2GRAY)
+        aa = (pose_a[:, :, 3].astype(np.float32) / 255.0)
+        ab = (pose_b[:, :, 3].astype(np.float32) / 255.0)
+        fa = (ga.astype(np.float32) * aa).astype(np.uint8)
+        fb = (gb.astype(np.float32) * ab).astype(np.uint8)
 
-    # Downscale 0.5x for fast, smooth global limb/cloth flow estimation
-    h, w = fa.shape
-    fa_s = cv2.resize(fa, (w // 2, h // 2))
-    fb_s = cv2.resize(fb, (w // 2, h // 2))
+        # Downscale 0.5x for fast, smooth global limb/cloth flow estimation
+        h, w = fa.shape
+        fa_s = cv2.resize(fa, (w // 2, h // 2))
+        fb_s = cv2.resize(fb, (w // 2, h // 2))
 
-    flow_ab_s = cv2.calcOpticalFlowFarneback(fa_s, fb_s, None, 0.5, 3, 21, 3, 5, 1.2, 0)
-    flow_ba_s = cv2.calcOpticalFlowFarneback(fb_s, fa_s, None, 0.5, 3, 21, 3, 5, 1.2, 0)
+        flow_ab_s = cv2.calcOpticalFlowFarneback(fa_s, fb_s, None, 0.5, 3, 21, 3, 5, 1.2, 0)
+        flow_ba_s = cv2.calcOpticalFlowFarneback(fb_s, fa_s, None, 0.5, 3, 21, 3, 5, 1.2, 0)
 
-    flow_ab = cv2.resize(flow_ab_s, (w, h)) * 2.0
-    flow_ba = cv2.resize(flow_ba_s, (w, h)) * 2.0
+        _FLOW_PAIR["key"] = key
+        _FLOW_PAIR["ab"] = cv2.resize(flow_ab_s, (w, h)) * 2.0
+        _FLOW_PAIR["ba"] = cv2.resize(flow_ba_s, (w, h)) * 2.0
+        _FLOW_PAIR["gy"], _FLOW_PAIR["gx"] = np.indices((h, w), dtype=np.float32)
 
-    gy, gx = np.indices((h, w), dtype=np.float32)
+    flow_ab = _FLOW_PAIR["ab"]
+    flow_ba = _FLOW_PAIR["ba"]
+    gy = _FLOW_PAIR["gy"]
+    gx = _FLOW_PAIR["gx"]
     map_a_x = (gx - u * flow_ab[:, :, 0]).astype(np.float32)
     map_a_y = (gy - u * flow_ab[:, :, 1]).astype(np.float32)
     map_b_x = (gx - (1.0 - u) * flow_ba[:, :, 0]).astype(np.float32)

@@ -1,19 +1,19 @@
 {
   "asset_id": "THAKUR_RUN_CYCLE_V001",
-  "gesture_name": "Natural Joyful Child Run Cycle (Right Profile, Barefoot, Flowing Uttoriyo & Dhoti)",
+  "gesture_name": "Natural Child Run Cycle",
   "gesture_category": "Running",
   "character_id": "BALAK_THAKUR_AGE06_UJANCHAR",
   "character_version": "1.0.0",
-  "animation_method": "Method 2 + Method 1: 8 Frame-by-Frame Run Key Poses + 24 FPS Flight Arcs & Uttoriyo Shawl Follow-Through",
+  "animation_method": "Method 1: Sleeveless dhoti worn like a sari, cloth across the chest, bare arms",
   "source_blend_file": "03_Character_Assets/Rig/THAKUR_CHILD_MASTER_RIG_V001.blend",
-  "source_keypose_sheet": "03_Character_Assets/Source_Files/THAKUR_RUN_CYCLE_KEYPOSES_8_V001.png",
+  "editable_blend_file": "04_Gesture_Library/Running/THAKUR_RUN_CYCLE_V001/THAKUR_RUN_CYCLE_V001.blend",
   "png_sequence_dir": "04_Gesture_Library\\Running\\THAKUR_RUN_CYCLE_V001\\frames",
   "preview_mp4": "05_Animation_Previews\\MP4\\THAKUR_RUN_CYCLE_V001.mp4",
   "preview_gif": "05_Animation_Previews\\GIF\\THAKUR_RUN_CYCLE_V001.gif",
   "preview_webm": "05_Animation_Previews\\WebM\\THAKUR_RUN_CYCLE_V001.webm",
   "frame_rate": 24,
-  "frame_count": 32,
-  "duration_seconds": 1.33,
+  "frame_count": 64,
+  "duration_seconds": 2.67,
   "dimensions": [
     768,
     768
@@ -22,6 +22,5 @@
   "seamless_loop": true,
   "approval_status": "APPROVED_V1",
   "version": "V001",
-  "qc_status": "PASS",
-  "editable_blend_file": "04_Gesture_Library/Running/THAKUR_RUN_CYCLE_V001/THAKUR_RUN_CYCLE_V001.blend"
+  "qc_status": "PASS"
 }

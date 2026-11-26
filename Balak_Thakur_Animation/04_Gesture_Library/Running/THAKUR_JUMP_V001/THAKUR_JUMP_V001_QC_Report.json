@@ -3,22 +3,22 @@
   "category": "Running",
   "status": "PASS",
   "character_consistency": {
-    "skin_palette_delta_rgb": 17.26,
-    "hair_palette_delta_rgb": 13.67,
-    "cloth_palette_delta_rgb": 3.24,
+    "skin_palette_delta_rgb": 12.83,
+    "hair_palette_delta_rgb": 6.32,
+    "cloth_palette_delta_rgb": 10.2,
     "identity_lock_verified": true
   },
   "animation_quality": {
     "fps": 24,
-    "mean_frame_to_frame_delta": 5.906,
-    "max_frame_to_frame_jump": 13.543,
-    "loop_closure_delta": 2.614,
+    "mean_frame_to_frame_delta": 2.893,
+    "max_frame_to_frame_jump": 7.148,
+    "loop_closure_delta": 0.888,
     "motion_active": true,
     "no_flicker_or_jumps": true
   },
   "export_quality": {
-    "expected_frames": 48,
-    "actual_frames": 48,
+    "expected_frames": 72,
+    "actual_frames": 72,
     "dimensions": [
       768,
       768

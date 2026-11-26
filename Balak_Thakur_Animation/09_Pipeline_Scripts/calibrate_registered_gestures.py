@@ -96,13 +96,14 @@ def re_extract_gesture_torso_uncropped():
         "05_waving", "06_open_palm", "07_holding_object", "08_resting_hands"
     ]
     col_w = w // 4
-    row_bounds = [(62, 355), (415, 712)]
+    # Full-body cells on the 1376x768 sheet: figure only, labels stay outside the crop.
+    row_bounds = [(50, 364), (402, 714)]
     for idx, gname in enumerate(gnames):
         r, c = idx // 4, idx % 4
         x0, x1 = max(0, c * col_w), min(w, (c + 1) * col_w)
         y0, y1 = row_bounds[r]
         crop = hand_arr[y0:y1, x0:x1].copy()
-        rgba = extract_clean_silhouette_rgba(crop, line_thresh=155, close_bottom=True, strip_h_lines=False)
+        rgba = extract_clean_silhouette_rgba(crop, line_thresh=155, close_bottom=False, strip_h_lines=False)
         Image.fromarray(rgba, mode="RGBA").save(LAYERS_DIR / f"gesture_torso_{gname}.png")
 
 
@@ -119,65 +120,157 @@ def detect_collar_neck_landmarks(torso_rgba: np.ndarray):
     return neck_cx, chin_y
 
 
+def _opaque_span(alpha: np.ndarray, y: int):
+    if y < 0 or y >= alpha.shape[0]:
+        return None
+    xs = np.where(alpha[y] > 128)[0]
+    if len(xs) < 8:
+        return None
+    return int(xs[0]), int(xs[-1])
+
+
+def _match_region(src: np.ndarray, src_mask: np.ndarray, ref: np.ndarray, ref_mask: np.ndarray):
+    """Shift source pixels onto the reference color, keeping the source's shading."""
+    if int(src_mask.sum()) < 40 or int(ref_mask.sum()) < 40:
+        return src
+    out = src.copy()
+    for c in range(3):
+        s = src[:, :, c][src_mask].astype(np.float32)
+        r = ref[:, :, c][ref_mask].astype(np.float32)
+        s_med, s_std = float(np.median(s)), float(np.std(s)) + 1.0
+        r_med, r_std = float(np.median(r)), float(np.std(r)) + 1.0
+        gain = float(np.clip(r_std / s_std, 0.65, 1.35))
+        shifted = (src[:, :, c].astype(np.float32) - s_med) * gain + r_med
+        out[:, :, c] = np.where(src_mask, np.clip(shifted, 0, 255), src[:, :, c])
+    return out
+
+
+def _cover_resting_hands(base: np.ndarray, cover_alpha: np.ndarray) -> np.ndarray:
+    """Continue each dhoti column down over resting hands the new pose does not use."""
+    out = base.copy()
+    nh, nw, _ = out.shape
+    rgb = out[:, :, :3]
+    gray = cv2.cvtColor(rgb, cv2.COLOR_RGB2GRAY)
+    rb = rgb[:, :, 0].astype(int) - rgb[:, :, 2].astype(int)
+    gy, gx = np.indices((nh, nw))
+    in_lap = (gy >= 500) & (gy <= 608) & (gx >= 170) & (gx <= 470)
+    skin = (rb > 32) & (gray > 100) & (gray < 220) & in_lap & (out[:, :, 3] > 140) & (cover_alpha < 60)
+    skin_u8 = cv2.dilate(skin.astype(np.uint8), cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (7, 7)))
+    near = skin_u8 > 0
+    ink = near & in_lap & (gray < 145) & (out[:, :, 3] > 80) & (cover_alpha < 60)
+    skin = near | ink
+    if int(skin.sum()) < 30:
+        return out
+    for x in range(170, 471):
+        col = skin[:, x]
+        if not np.any(col):
+            continue
+        src = out[478:498, x, :3]
+        src_a = out[478:498, x, 3]
+        good = src_a > 140
+        if not np.any(good):
+            continue
+        tone = np.median(src[good], axis=0)
+        out[col, x, :3] = tone
+        out[col, x, 3] = 255
+    return out
+
+
 def build_registered_gesture_master_plate(gname: str, master_hi: np.ndarray, armless_lap_base: np.ndarray = None):
+    """
+    Fit a hand pose onto the master body.
+    The head, uttoriyo color, dhoti, and crossed legs stay the master's.
+    The gesture is scaled to the master's shoulder width and recolored to the
+    master's cloth and skin before it is laid over the chest and arms.
+    """
     if gname == "08_resting_hands":
         return master_hi.copy()
 
-    if armless_lap_base is None:
-        armless_lap_base = build_clean_armless_lap_base(master_hi)
-
     g_rgba = np.array(Image.open(LAYERS_DIR / f"gesture_torso_{gname}.png").convert("RGBA"))
     neck_cx, chin_y = detect_collar_neck_landmarks(g_rgba)
+    g_alpha = g_rgba[:, :, 3]
+    # Match the chest width, not a fixed scale, so the shawl meets the master's shoulders.
+    g_span = _opaque_span(g_alpha, int(round(chin_y + 109)))
+    if g_span is None:
+        g_span = _opaque_span(g_alpha, int(round(chin_y + 80)))
+    m_alpha = master_hi[:, :, 3]
+    m_span = _opaque_span(m_alpha, 360)
+    if g_span is None or m_span is None:
+        scale = 1.25
+    else:
+        g_w = max(1, g_span[1] - g_span[0])
+        m_w = max(1, m_span[1] - m_span[0])
+        scale = float(np.clip(m_w / float(g_w), 1.05, 1.70))
 
-    # Align the chin of gesture_torso to y=251.0 (EXACT chin bottom of master_hi!)
     target_chin_y = 251.0
     target_neck_cx = 322.0
-    scale_x = 1.38
-    scale_y = 1.36
-
     M = np.array([
-        [scale_x, 0.0, target_neck_cx - scale_x * neck_cx],
-        [0.0, scale_y, target_chin_y - scale_y * chin_y]
+        [scale, 0.0, target_neck_cx - scale * neck_cx],
+        [0.0, scale, target_chin_y - scale * chin_y]
     ], dtype=np.float32)
 
     nh, nw, _ = master_hi.shape
-    warped_g = cv2.warpAffine(
+    warped = cv2.warpAffine(
         g_rgba, M, (nw, nh),
         flags=cv2.INTER_LANCZOS4,
         borderMode=cv2.BORDER_CONSTANT,
         borderValue=(0, 0, 0, 0)
     )
 
-    out = armless_lap_base.copy()
+    # Recolor the pasted cloth and skin onto this master's uttoriyo and skin.
+    m_rgb = master_hi[:, :, :3]
+    m_gray = cv2.cvtColor(m_rgb, cv2.COLOR_RGB2GRAY)
+    m_rb = m_rgb[:, :, 0].astype(int) - m_rgb[:, :, 2].astype(int)
+    ref_cloth = (
+        (master_hi[:, :, 3] > 200) & (m_gray > 185) & (np.abs(m_rb) < 36)
+        & (np.arange(nh)[:, None] > 330) & (np.arange(nh)[:, None] < 500)
+    )
+    ref_skin = (
+        (master_hi[:, :, 3] > 200) & (m_rb > 22) & (m_gray > 120) & (m_gray < 230)
+        & (np.arange(nh)[:, None] > 150) & (np.arange(nh)[:, None] < 250)
+    )
+    w_rgb = warped[:, :, :3]
+    w_gray = cv2.cvtColor(w_rgb, cv2.COLOR_RGB2GRAY)
+    w_rb = w_rgb[:, :, 0].astype(int) - w_rgb[:, :, 2].astype(int)
+    opaque = warped[:, :, 3] > 140
+    # The hand-sheet cloth is warm (R-B around 45). Real hands are warmer still.
+    line = opaque & (w_gray < 100)
+    skin = opaque & ~line & (w_rb > 58) & (w_gray < 205) & (w_gray > 70)
+    cloth = opaque & ~line & ~skin
+    recolored = warped.copy()
+    recolored[:, :, :3] = _match_region(w_rgb, cloth, m_rgb, ref_cloth)
+    recolored[:, :, :3] = _match_region(recolored[:, :, :3], skin, m_rgb, ref_skin)
+    recolored[:, :, :3] = np.where(line[:, :, None], w_rgb, recolored[:, :, :3])
+
     gy, gx = np.indices((nh, nw), dtype=np.float32)
+    # One outline: the master's head and lap, the gesture's chest and arms.
+    # Old sleeves that sit outside the new torso are dropped so they cannot
+    # stick out beside the shawl.
+    v_top = np.clip((gy - 244.0) / 16.0, 0.0, 1.0)
+    v_bot = np.clip((520.0 - gy) / 28.0, 0.0, 1.0)
+    wg_rb = recolored[:, :, 0].astype(int) - recolored[:, :, 2].astype(int)
+    wg_gray = cv2.cvtColor(recolored[:, :, :3], cv2.COLOR_RGB2GRAY)
+    is_hand = ((wg_rb > 50) & (recolored[:, :, 3] > 150) & (gy > 450) & (gy < 590)).astype(np.uint8) * 255
+    # Keep a lowered hand only when it is still connected to the arm above the lap.
+    n_lab, labs, stats, _ = cv2.connectedComponentsWithStats((is_hand > 0).astype(np.uint8))
+    kept = np.zeros_like(is_hand)
+    for lab in range(1, n_lab):
+        ys_lab = np.where(labs == lab)[0]
+        if len(ys_lab) and int(ys_lab.min()) < 500:
+            kept[labs == lab] = 255
+    near_hand = cv2.dilate(kept, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (7, 7))) > 0
+    hand_ext = ((kept > 0) | ((wg_gray < 130) & near_hand & (recolored[:, :, 3] > 150))).astype(np.float32)
+    hand_ext = cv2.GaussianBlur(hand_ext, (5, 5), 1.0)
+    v_weight = np.maximum(v_top * v_bot, np.clip(v_top, 0, 1) * hand_ext)
 
-    # Vertical mask for warped_g:
-    # - 0.0 above y=248 (keeps 100% of master_hi's head, chin, and upper neck y=0..248 untouched!)
-    # - Smooth ramp 0.0 -> 1.0 across y=248..260 (right at the chin/neck junction so gesture_torso's full collar at y=254..310 is 100% intact!)
-    # - 1.0 across y=260..495 (active gesture shoulders, sleeves, forearms, and hands)
-    # - Smooth ramp 1.0 -> 0.0 across y=495..538 (waist/lap junction above the Sukhasana crossed knees & bare foot)
-    v_top = np.clip((gy - 248.0) / 12.0, 0.0, 1.0)
-    v_bot = np.clip((538.0 - gy) / 42.0, 0.0, 1.0)
+    layered = recolored.copy()
+    layered[:, :, 3] = (layered[:, :, 3].astype(np.float32) * v_weight).astype(np.uint8)
 
-    # Preserve active gesture hands & fingers even if they dip down to y=575 (e.g., folded hands, open palms, holding object)
-    wg_rb = warped_g[:, :, 0].astype(int) - warped_g[:, :, 2].astype(int)
-    wg_gray = cv2.cvtColor(warped_g[:, :, :3], cv2.COLOR_RGB2GRAY)
-    is_active_hand = ((wg_rb > 26) & (warped_g[:, :, 3] > 160) & (gy > 465) & (gy < 582)).astype(np.uint8) * 255
-    near_active_hand = cv2.dilate(is_active_hand, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (9, 9))) > 0
-    hand_ext = ((is_active_hand > 0) | ((wg_gray < 175) & near_active_hand & (warped_g[:, :, 3] > 160))).astype(np.float32)
-    hand_ext = cv2.GaussianBlur(hand_ext, (7, 7), 2.0)
-
-    v_weight = np.maximum(v_top * v_bot, v_top * hand_ext)
-
-    # Clear old resting outer sleeves in torso zone y=254..505 so only the active gesture torso/arms appear
-    torso_clear = np.clip(1.0 - ((gy > 254) & (gy < 505)).astype(np.float32), 0.0, 1.0)
-    torso_clear = cv2.GaussianBlur(torso_clear, (11, 11), 3.0)
-    out[:, :, 3] = (out[:, :, 3].astype(np.float32) * torso_clear).astype(np.uint8)
-
-    wg_layered = warped_g.copy()
-    wg_layered[:, :, 3] = (wg_layered[:, :, 3].astype(np.float32) * v_weight).astype(np.uint8)
-    alpha_composite_layer(out, wg_layered, 0, 0)
-
+    # Keep the master's lap, knees, and feet exactly. The recolored gesture
+    # only covers the chest and the active hands, so the lower body stays
+    # on the same outline and the same uttoriyo white.
+    out = master_hi.copy()
+    alpha_composite_layer(out, layered, 0, 0)
     return out
 
 

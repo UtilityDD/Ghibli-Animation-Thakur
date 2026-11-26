@@ -150,7 +150,8 @@ def process_all_sheets():
         "05_waving", "06_open_palm", "07_holding_object", "08_resting_hands"
     ]
     col_w = w // 4
-    row_bounds = [(62, 355), (415, 712)]
+    # Full-body cells on the 1376x768 sheet: figure only, labels stay outside the crop.
+    row_bounds = [(50, 364), (402, 714)]
     for idx, gname in enumerate(gnames):
         r, c = idx // 4, idx % 4
         x0, x1 = c * col_w + 8, (c + 1) * col_w - 8

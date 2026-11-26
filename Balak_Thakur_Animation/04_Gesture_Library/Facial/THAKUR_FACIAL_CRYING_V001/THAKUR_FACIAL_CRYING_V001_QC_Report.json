@@ -3,16 +3,16 @@
   "category": "Facial",
   "status": "PASS",
   "character_consistency": {
-    "skin_palette_delta_rgb": 7.39,
-    "hair_palette_delta_rgb": 14.73,
-    "cloth_palette_delta_rgb": 19.18,
+    "skin_palette_delta_rgb": 6.97,
+    "hair_palette_delta_rgb": 14.14,
+    "cloth_palette_delta_rgb": 19.24,
     "identity_lock_verified": true
   },
   "animation_quality": {
     "fps": 24,
-    "mean_frame_to_frame_delta": 2.048,
-    "max_frame_to_frame_jump": 3.844,
-    "loop_closure_delta": 0.583,
+    "mean_frame_to_frame_delta": 2.714,
+    "max_frame_to_frame_jump": 5.792,
+    "loop_closure_delta": 0.563,
     "motion_active": true,
     "no_flicker_or_jumps": true
   },

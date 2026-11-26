@@ -4,7 +4,7 @@
   "gesture_category": "Sitting",
   "character_id": "BALAK_THAKUR_AGE06_UJANCHAR",
   "character_version": "1.0.0",
-  "animation_method": "Method 2 + Method 1: Standing-to-Sukhasana Transition with Anticipation & Settle",
+  "animation_method": "Method 1: Sleeveless dhoti, standing settle then seated plate, no blended bodies",
   "source_blend_file": "03_Character_Assets/Rig/THAKUR_CHILD_MASTER_RIG_V001.blend",
   "editable_blend_file": "04_Gesture_Library/Sitting/THAKUR_SITTING_DOWN_V001/THAKUR_SITTING_DOWN_V001.blend",
   "png_sequence_dir": "04_Gesture_Library\\Sitting\\THAKUR_SITTING_DOWN_V001\\frames",
@@ -12,8 +12,8 @@
   "preview_gif": "05_Animation_Previews\\GIF\\THAKUR_SITTING_DOWN_V001.gif",
   "preview_webm": "05_Animation_Previews\\WebM\\THAKUR_SITTING_DOWN_V001.webm",
   "frame_rate": 24,
-  "frame_count": 60,
-  "duration_seconds": 2.5,
+  "frame_count": 72,
+  "duration_seconds": 3.0,
   "dimensions": [
     768,
     768

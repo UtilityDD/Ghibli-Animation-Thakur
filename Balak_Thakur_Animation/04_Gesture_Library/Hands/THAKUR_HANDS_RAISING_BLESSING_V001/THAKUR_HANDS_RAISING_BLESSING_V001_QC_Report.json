@@ -3,22 +3,22 @@
   "category": "Hands",
   "status": "PASS",
   "character_consistency": {
-    "skin_palette_delta_rgb": 7.08,
-    "hair_palette_delta_rgb": 14.53,
-    "cloth_palette_delta_rgb": 13.19,
+    "skin_palette_delta_rgb": 16.14,
+    "hair_palette_delta_rgb": 16.57,
+    "cloth_palette_delta_rgb": 19.42,
     "identity_lock_verified": true
   },
   "animation_quality": {
     "fps": 24,
-    "mean_frame_to_frame_delta": 1.141,
-    "max_frame_to_frame_jump": 2.796,
-    "loop_closure_delta": 0.804,
+    "mean_frame_to_frame_delta": 0.948,
+    "max_frame_to_frame_jump": 2.511,
+    "loop_closure_delta": 0.407,
     "motion_active": true,
     "no_flicker_or_jumps": true
   },
   "export_quality": {
-    "expected_frames": 60,
-    "actual_frames": 60,
+    "expected_frames": 96,
+    "actual_frames": 96,
     "dimensions": [
       768,
       768

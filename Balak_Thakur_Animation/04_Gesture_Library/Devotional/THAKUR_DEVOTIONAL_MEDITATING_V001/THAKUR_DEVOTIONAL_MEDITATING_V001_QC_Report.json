@@ -3,22 +3,22 @@
   "category": "Devotional",
   "status": "PASS",
   "character_consistency": {
-    "skin_palette_delta_rgb": 7.56,
-    "hair_palette_delta_rgb": 14.93,
-    "cloth_palette_delta_rgb": 18.98,
+    "skin_palette_delta_rgb": 16.24,
+    "hair_palette_delta_rgb": 16.88,
+    "cloth_palette_delta_rgb": 19.1,
     "identity_lock_verified": true
   },
   "animation_quality": {
     "fps": 24,
-    "mean_frame_to_frame_delta": 0.282,
-    "max_frame_to_frame_jump": 0.461,
-    "loop_closure_delta": 0.442,
+    "mean_frame_to_frame_delta": 0.255,
+    "max_frame_to_frame_jump": 0.702,
+    "loop_closure_delta": 0.137,
     "motion_active": true,
     "no_flicker_or_jumps": true
   },
   "export_quality": {
-    "expected_frames": 72,
-    "actual_frames": 72,
+    "expected_frames": 96,
+    "actual_frames": 96,
     "dimensions": [
       768,
       768

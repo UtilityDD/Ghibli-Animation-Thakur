@@ -18,12 +18,8 @@ from render_pilot_animations_1_to_3 import (
     render_pilot_1_gentle_smile_blink
 )
 from render_pilot_animations_3_to_5 import interpolate_flow_rgba
-from expand_gesture_library_part1_AB import (
-    load_expression_head_matched, save_animation_package
-)
-from expand_gesture_library_part2_CD import (
-    build_matched_gesture_body, render_hand_or_sitting_gesture
-)
+from expand_gesture_library_part1_AB import save_animation_package
+from render_emotional_category_f import render_emotional_category_f
 
 
 def load_standing_view_normalized(view_name: str, target_h: int = 560, canvas_sz: int = 768):
@@ -234,65 +230,8 @@ def build_category_e_and_f():
     save_animation_package("THAKUR_MOVING_FORWARD_BACKWARD_V001", "Walking", "Moving Forward and Backward with Natural Step Cadence",
                            "Method 1 + Method 2: 2.5D Depth Stride & Step Cadence Deformation", frames_fwd_back)
 
-    # =========================================================================
-    # CATEGORY F — Emotional storytelling (8 items)
-    # =========================================================================
-    h_smile = hb
-    h_broad = load_expression_head_matched("03_broad_smile", hb, nw, nh)
-    h_laugh = load_expression_head_matched("04_laughing", hb, nw, nh)
-    h_surp = load_expression_head_matched("05_surprised", hb, nw, nh)
-    h_curious = load_expression_head_matched("06_curious", hb, nw, nh)
-    h_angry = load_expression_head_matched("07_angry", hb, nw, nh)
-    h_sad = load_expression_head_matched("08_sad", hb, nw, nh)
-    h_crying = load_expression_head_matched("09_crying", hb, nw, nh)
-    h_det = load_expression_head_matched("12_determined", hb, nw, nh)
-
-    g_folded = build_matched_gesture_body("02_folded_hands", bb, nw, nh)
-    g_blessing = build_matched_gesture_body("03_blessing", bb, nw, nh)
-    g_open_palm = build_matched_gesture_body("06_open_palm", bb, nw, nh)
-    g_holding = build_matched_gesture_body("07_holding_object", bb, nw, nh)
-
-    # 1. Becoming angry (Restrained righteous child resolve — torso straightens, hands fold firmly, gaze becomes firm)
-    render_hand_or_sitting_gesture("THAKUR_EMOTIONAL_BECOMING_ANGRY_V001", "Emotional",
-                                   "Becoming Righteous / Firmly Angry (Subtle Child Gravity)",
-                                   bb, g_folded, h_smile, h_angry, fn, nw, nh, total_frames=72,
-                                   head_pitch_active=3.5)
-    # 2. Becoming happy (Face brightens from calm neutral to radiant broad smile with open palms)
-    render_hand_or_sitting_gesture("THAKUR_EMOTIONAL_BECOMING_HAPPY_V001", "Emotional",
-                                   "Becoming Radiantly Happy",
-                                   bb, g_open_palm, h_smile, h_broad, fn, nw, nh, total_frames=72,
-                                   arm_osc_y=-2.5, head_pitch_active=-2.0, head_roll_active=2.5)
-    # 3. Expressing wonder (Looking upward/outward with wide-eyed wonder and cupped/open hands)
-    wonder_head = np.clip(h_surp.astype(np.float32) * 0.5 + h_curious.astype(np.float32) * 0.5, 0, 255).astype(np.uint8)
-    render_hand_or_sitting_gesture("THAKUR_EMOTIONAL_EXPRESSING_WONDER_V001", "Emotional",
-                                   "Expressing Childlike Wonder and Awe",
-                                   bb, g_holding, h_smile, wonder_head, fn, nw, nh, total_frames=72,
-                                   arm_osc_y=-3.0, head_pitch_active=-5.5, head_roll_active=3.0)
-    # 4. Laughing naturally (Warm spontaneous child laughter with gentle shoulder chuckle)
-    render_hand_or_sitting_gesture("THAKUR_EMOTIONAL_LAUGHING_NATURALLY_V001", "Emotional",
-                                   "Laughing Naturally with Gentle Shoulder Motion",
-                                   bb, bb, h_broad, h_laugh, fn, nw, nh, total_frames=72,
-                                   arm_osc_y=-3.5, arm_osc_hz=4.0, head_pitch_active=-3.0, head_roll_active=2.5)
-    # 5. Becoming emotional (Deep spiritual empathy — eyes welling with compassionate tears, hands folded at waist)
-    render_hand_or_sitting_gesture("THAKUR_EMOTIONAL_BECOMING_EMOTIONAL_V001", "Emotional",
-                                   "Becoming Deeply Emotional /Moved with Compassion",
-                                   bb, g_folded, h_smile, h_crying, fn, nw, nh, total_frames=72,
-                                   head_pitch_active=4.5, head_roll_active=-2.0)
-    # 6. Showing concern (Leaning slightly forward with concerned sad/empathetic gaze and open palm)
-    render_hand_or_sitting_gesture("THAKUR_EMOTIONAL_SHOWING_CONCERN_V001", "Emotional",
-                                   "Showing Deep Empathy and Concern",
-                                   bb, g_open_palm, h_smile, h_sad, fn, nw, nh, total_frames=72,
-                                   arm_osc_y=-1.5, head_pitch_active=3.5, head_roll_active=-3.5)
-    # 7. Comforting someone (Raising right hand in gentle blessing/reassurance with warm compassionate smile)
-    render_hand_or_sitting_gesture("THAKUR_EMOTIONAL_COMFORTING_SOMEONE_V001", "Emotional",
-                                   "Comforting Someone Gently with Reassuring Gesture",
-                                   bb, g_blessing, h_sad, h_smile, fn, nw, nh, total_frames=72,
-                                   arm_osc_y=-2.0, head_pitch_active=2.5, head_roll_active=3.5)
-    # 8. Expressing determination (Steady focused gaze, upright posture, quiet inner spiritual resolve)
-    render_hand_or_sitting_gesture("THAKUR_EMOTIONAL_EXPRESSING_DETERMINATION_V001", "Emotional",
-                                   "Expressing Quiet Inner Spiritual Determination",
-                                   bb, g_folded, h_smile, h_det, fn, nw, nh, total_frames=72,
-                                   head_pitch_active=2.0)
+    # Category F is rendered from the painted plates, not a split head/body blend.
+    render_emotional_category_f()
 
 
 if __name__ == "__main__":

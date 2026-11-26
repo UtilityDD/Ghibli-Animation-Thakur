@@ -46,36 +46,28 @@ To ensure strict consistency and prevent unauthorized modifications to the Maste
 - **Category B (8 Head Movements)**: Rendered at 24 FPS with anatomical cervical spine pivot (`px = 321.5, py = 308.0`), cubic Hermite neck falloff (`y = 246..312`), and full-bust mirrored Look-Left plate (`registered_seated_look_left.png`).
 - Formally approved by user in `Batch1_Category_AB_Review.md`.
 
-### 🟡 Phase 6: Batch 2 Rollout (CURRENT NEXT STEP)
-- **Category C (10 Hand Gestures)**:
-  1. `THAKUR_HAND_PRANAM_V001`
-  2. `THAKUR_HAND_BLESSING_V001`
-  3. `THAKUR_HAND_OPEN_PALMS_V001`
-  4. `THAKUR_HAND_POINTING_V001`
-  5. `THAKUR_HAND_WAVING_V001`
-  6. `THAKUR_HAND_HOLDING_FLOWER_V001`
-  7. `THAKUR_HAND_RESTING_ON_KNEES_V001`
-  8. `THAKUR_HAND_TOUCHING_CHEST_V001`
-  9. `THAKUR_HAND_EXTENDING_FORWARD_V001`
-  10. `THAKUR_HAND_FOLDED_LAP_V001`
-- **Category D (10 Sitting & Devotional Gestures)**:
-  1. `THAKUR_SITTING_CROSS_LEGGED_V001`
-  2. `THAKUR_SITTING_NATURALLY_V001`
-  3. `THAKUR_SITTING_CHANGING_POSITION_V001`
-  4. `THAKUR_SITTING_LOOKING_THOUGHTFULLY_V001`
-  5. `THAKUR_SITTING_AND_SMILING_V001`
-  6. `THAKUR_SITTING_AND_LAUGHING_V001`
-  7. `THAKUR_SITTING_LISTENING_ATTENTIVELY_V001`
-  8. `THAKUR_DEVOTIONAL_MEDITATING_V001`
-  9. `THAKUR_DEVOTIONAL_BOWING_V001`
-  10. `THAKUR_PRAYER_SITTING_V001`
-- *Implementation Note*: Use `calibrate_registered_gestures.py` with `build_clean_armless_lap_base()` to eliminate resting-arm ghosting when active gesture arms are composited.
+### ✅ Phase 6: Batch 2 Rollout (COMPLETED & VERIFIED)
+- **Category C (10 Hand Gestures)**: Rendered at 24 FPS with zero-double-arm inpainting and dynamic chest matching (`_cover_resting_hands`, `_match_region`, `_opaque_span`).
+- **Category D (10 Sitting & Devotional Gestures)**: Cross-legged, naturally, changing position, listening attentively, looking thoughtfully, laughing, smiling, meditating, bowing (extended to 96 frames), prayer.
 
-### ⏳ Phase 7: Batch 3 Rollout (PENDING)
-- **Category E (Full-Body Locomotion)**: Walk cycles, run cycles, standing idle, jumps, turnarounds.
-- **Category F (Emotional Storytelling)**: Ecstatic dance, childlike wonder, laughing, resting.
+### ✅ Phase 7: Batch 3 Rollout (COMPLETED & VERIFIED)
+- **Category E (Full-Body Locomotion - 7 Animations)**: Walk Cycle (Right Profile, Barefoot), Walk Slow Cycle, Moving Forward & Backward, Standing Idle, Turn Around (5-view cycle), Jump, Run Cycle.
+- **Category F (Emotional Storytelling - 8 Animations)**: Becoming Angry, Becoming Emotional, Becoming Happy, Comforting Someone, Expressing Determination, Expressing Wonder, Laughing Naturally, Showing Concern.
 
-### ⏳ Phase 8: ComfyUI Upscaling & Final 4K Masters (OPTIONAL / TIER 2 GPU)
+### ✅ Master Gesture Library Milestone (COMPLETED)
+- **Total Animations**: 56 Animations across 8 Categories.
+- **Quality Gates**: All 56 animations passed 8-point automated QC validator (`validate_full_library.py`).
+- **Review Assets**: Complete HTML suites (`finalized_library_preview.html`, `natural_motion_preview.html`, `emotional_preview.html`, etc.) and master contact board (`Full_Library_56_Animations_Overview_Board.png`).
+
+### 🟡 Phase 8: Season 1 Episode 1 Asset Pre-Production (CURRENT NEXT STEP)
+- **Secondary Characters**:
+  1. *Mata Charushila Devi* (Age ~28): 6.2H tall, white taant sari with narrow red border, ghomta, gentle maternal eyes. Model sheet (Turnaround + Expressions).
+  2. *Sanatan Hazra Mastermoshai* (Age ~45): 6.0H tall, spectacles, beige khadi kurta & dhoti, pathshala master. Model sheet.
+- **Ghibli Background Environments (Per `Background_Art_Bible.md`)**:
+  1. `BG01_Ancestral_Courtyard_Day`: Mud plinth, cow dung plaster courtyard, tulsi mancha, banana grove, warm morning sunlight.
+  2. `BG02_Kali_Puja_Night`: Earthen oil lamps, brass bell, marigold garlands, sacred midnight atmosphere.
+
+### ⏳ Phase 9: ComfyUI Upscaling & Final 4K Masters (OPTIONAL / TIER 2 GPU)
 - Run `09_Pipeline_Scripts/comfyui_workflows/thakur_controlnet_ipadapter_workflow.json` on CUDA machines for temporal inbetweening and 4K upscaling.
 
 ---

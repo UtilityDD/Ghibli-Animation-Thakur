@@ -3,22 +3,22 @@
   "category": "Sitting",
   "status": "PASS",
   "character_consistency": {
-    "skin_palette_delta_rgb": 7.12,
-    "hair_palette_delta_rgb": 14.72,
-    "cloth_palette_delta_rgb": 13.26,
+    "skin_palette_delta_rgb": 15.7,
+    "hair_palette_delta_rgb": 16.12,
+    "cloth_palette_delta_rgb": 19.29,
     "identity_lock_verified": true
   },
   "animation_quality": {
     "fps": 24,
-    "mean_frame_to_frame_delta": 1.579,
-    "max_frame_to_frame_jump": 3.61,
-    "loop_closure_delta": 0.741,
+    "mean_frame_to_frame_delta": 0.752,
+    "max_frame_to_frame_jump": 2.073,
+    "loop_closure_delta": 0.4,
     "motion_active": true,
     "no_flicker_or_jumps": true
   },
   "export_quality": {
-    "expected_frames": 72,
-    "actual_frames": 72,
+    "expected_frames": 96,
+    "actual_frames": 96,
     "dimensions": [
       768,
       768

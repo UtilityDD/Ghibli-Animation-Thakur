@@ -3,22 +3,22 @@
   "category": "Walking",
   "status": "PASS",
   "character_consistency": {
-    "skin_palette_delta_rgb": 16.06,
-    "hair_palette_delta_rgb": 11.91,
-    "cloth_palette_delta_rgb": 3.7,
+    "skin_palette_delta_rgb": 11.92,
+    "hair_palette_delta_rgb": 4.56,
+    "cloth_palette_delta_rgb": 10.31,
     "identity_lock_verified": true
   },
   "animation_quality": {
     "fps": 24,
-    "mean_frame_to_frame_delta": 3.183,
-    "max_frame_to_frame_jump": 4.649,
-    "loop_closure_delta": 1.874,
+    "mean_frame_to_frame_delta": 0.596,
+    "max_frame_to_frame_jump": 1.892,
+    "loop_closure_delta": 0.0,
     "motion_active": true,
     "no_flicker_or_jumps": true
   },
   "export_quality": {
-    "expected_frames": 72,
-    "actual_frames": 72,
+    "expected_frames": 144,
+    "actual_frames": 144,
     "dimensions": [
       768,
       768
