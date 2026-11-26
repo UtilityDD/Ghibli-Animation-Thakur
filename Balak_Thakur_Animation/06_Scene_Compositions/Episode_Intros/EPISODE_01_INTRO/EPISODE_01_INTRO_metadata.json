@@ -1,0 +1,28 @@
+{
+  "sequence_id": "EPISODE_01_INTRO",
+  "type": "REUSABLE_EPISODE_CINEMATIC_INTRO",
+  "episode_number": 1,
+  "bengali_title": "কালীপূজার রাত্রে মহাবির্ভাব",
+  "english_title": "The Divine Advent on Kali Puja Night",
+  "canonical_reference": "শ্রীশ্রী ১০৮ স্বামী স্বরূপানন্দ পরমহংসদেব শৈশব লীলা — উজানচর",
+  "resolution": [
+    1280,
+    720
+  ],
+  "fps": 24,
+  "total_frames": 144,
+  "duration_seconds": 6.0,
+  "aspect_ratio": "16:9 Cinema Letterbox 2.39:1",
+  "cue_points": {
+    "fade_in_complete": 28,
+    "subtitle_plate_in": 48,
+    "golden_particle_peak": 84,
+    "scene_dissolve_start": 126
+  },
+  "character": {
+    "name": "Param Bismoy Balak Thakur",
+    "age": 6,
+    "location": "Ujanchar, Brahmanbaria",
+    "aesthetic": "Studio Ghibli Hand-Painted Watercolor"
+  }
+}
